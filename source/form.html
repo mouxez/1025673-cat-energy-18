@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 
@@ -39,11 +38,11 @@
         </label>
         <label class="client-info__label">
           <span class="client-info__span">Вес (кг):*<span>
-          <input class="client-info__input" type="text" placeholder="7" name="weight">
+          <input class="client-info__input" type="number" placeholder="7" name="weight">
         </label>
         <label class="client-info__label">
           <span class="client-info__span">Возраст (лет):<span>
-          <input class="client-info__input" type="text" placeholder="7" name="age">
+          <input class="client-info__input" type="number" placeholder="7" name="age">
         </label>
         <label class="client-info__label--radio">
           <input class="client-info__radio" type="radio" checked name="program" value="loss">
@@ -72,27 +71,27 @@
         <textarea name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       <h2 class="extra-section__title">Дополнительно</h2>
         <label class="extra-section__label">
-          <input class="extra-section__checkbox" type="checkbox" checked>
+          <input class="extra-section__checkbox" type="checkbox" name="extras" value="sweetener" checked>
           <span class="extra-section__span">Сахарозаменитель<span>
         </label>
         <label class="extra-section__label">
-          <input class="extra-section__checkbox" type="checkbox">
+          <input class="extra-section__checkbox" type="checkbox" name="extras" value="water">
           <span class="extra-section__span">Питьевая вода<span>
         </label>
         <label class="extra-section__label">
-          <input class="extra-section__checkbox" type="checkbox">
+          <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk">
           <span class="extra-section__span">Молоко<span>
         </label>
         <label class="extra-section__label">
-          <input class="extra-section__checkbox" type="checkbox">
+          <input class="extra-section__checkbox" type="checkbox" name="extras" value="vitamin">
           <span class="extra-section__span">Витамины<span>
         </label>
-        <input class="extra-section__button" type="submit" name="extra" value="Отправить заявку">
+        <button class="form-page__button" type="submit">Отправить заявку</button>
       </form>
       <p class="required-fields">* — Обязательные поля</p>
       <div class="cooperation-wrapper">
         <p class="cooperation-invite">приглашаем к сотрудничеству дилеров!</p>
-        <p class="cooperation-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <address class="cooperation-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </main>
