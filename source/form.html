@@ -29,7 +29,71 @@
     </header>
 
     <main>
-
+      <h1 class="form-page__title">Подбор программы</h1>
+      <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="client-info__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <label class="client-info__label">
+          <span class="client-info__span">Имя:*<span>
+          <input class="client-info__input" type="text" placeholder="БАРСИК" name="name">
+        </label>
+        <label class="client-info__label">
+          <span class="client-info__span">Вес (кг):*<span>
+          <input class="client-info__input" type="number" placeholder="7" name="weight">
+        </label>
+        <label class="client-info__label">
+          <span class="client-info__span">Возраст (лет):<span>
+          <input class="client-info__input" type="number" placeholder="7" name="age">
+        </label>
+        <label class="client-info__label--radio">
+          <input class="client-info__radio" type="radio" checked name="program" value="loss">
+          <span class="client-info__span">Похудение<span>
+        </label>
+        <label class="client-info__label--radio">
+          <input class="client-info__radio" type="radio" name="program" value="gain">
+          <span class="client-info__span">Набор массы<span>
+        </label>
+        <label class="client-info__label--radio">
+          <input class="client-info__radio" type="radio" name="program" value="unidentified">
+          <span class="client-info__span">Не знаю (Нужен ваш совет)<span>
+        </label>
+      <h2 class="client-contacts__title">Контактные данные (владельца кота)</h2>
+        <label class="client-contacts__label">
+          <span class="client-contacts__span">E-mail:*<span>
+          <input class="client-contacts__input" type="email" placeholder="kuklachev@gmail.com">
+          <svg class="client-contacts__icon--email"></svg>
+        </label>
+        <label class="client-contacts__label">
+          <span class="client-contacts__span">Телефон:*<span>
+          <input class="client-contacts__input" type="tel" placeholder="8 (960) 900-60-90">
+          <svg class="client-contacts__icon--tel"></svg>
+        </label>
+      <h2 class="client-comment__title">Комментарий</h2>
+        <textarea name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <h2 class="extra-section__title">Дополнительно</h2>
+        <label class="extra-section__label">
+          <input class="extra-section__checkbox" type="checkbox" name="extras" value="sweetener" checked>
+          <span class="extra-section__span">Сахарозаменитель<span>
+        </label>
+        <label class="extra-section__label">
+          <input class="extra-section__checkbox" type="checkbox" name="extras" value="water">
+          <span class="extra-section__span">Питьевая вода<span>
+        </label>
+        <label class="extra-section__label">
+          <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk">
+          <span class="extra-section__span">Молоко<span>
+        </label>
+        <label class="extra-section__label">
+          <input class="extra-section__checkbox" type="checkbox" name="extras" value="vitamin">
+          <span class="extra-section__span">Витамины<span>
+        </label>
+        <button class="form-page__button" type="submit">Отправить заявку</button>
+      </form>
+      <p class="required-fields">* — Обязательные поля</p>
+      <div class="cooperation-wrapper">
+        <p class="cooperation-invite">приглашаем к сотрудничеству дилеров!</p>
+        <address class="cooperation-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </main>
 
     <footer class="page-footer">
