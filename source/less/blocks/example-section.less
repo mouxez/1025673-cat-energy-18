@@ -1,4 +1,63 @@
 .example-section {
   min-height: 705px;
   background-color: @grey;
+  margin-top: 42px;
+}
+
+.example-section__title {
+  color: #111111;
+  font-size: 36px;
+  line-height: 1.67;
+  margin-top: 36px;
+  font-weight: normal;
+}
+
+.example-section__text {
+  .text-style_3;
+}
+
+.example-section__list dt {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #444444;
+}
+
+.example-section__value {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1;
+  color: #111111;
+}
+
+.example-section__cost {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.switch-text {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.switch-wrapper::before {
+  content: "";
+  background-image: url("/img/before-mobile@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: block;
+  width: 311px;
+  height: 232px;
 }
