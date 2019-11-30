@@ -1,13 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
-  width: 320px;
-  margin: 0 auto;
-  font-family: @brand-font;
-  border: 1px solid @section-background-color;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
