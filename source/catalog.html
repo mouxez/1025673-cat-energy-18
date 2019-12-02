@@ -3,38 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39" alt="Кэт энерджи логотип">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Кэт энерджи логотип">
       </a>
-      <button class="main-nav__toggle" type="button">Главное меню</button>
+      <button class="main-nav__toggle" type="button"></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item--active">
+            <li class="site-list__item site-list__item--active">
               <a>Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Подбор программы</a>
+              <a href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main class="container">
 
       <h2 class="catalog-title">Каталог продукции</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <a href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="">
+            <img class="catalog-item__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="">
             <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
           </a>
           <dl class="catalog-table">
@@ -45,11 +46,11 @@
             <dt>Цена</dt>
               <dd>700 г.</dd>
           </dl>
-          <a class="order-button" href="#">Заказать</a>
+          <a class="order-button catalog-button" href="#">Заказать</a>
         </li>
         <li class="catalog-item">
           <a href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="">
+            <img class="catalog-item__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="">
             <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
           </a>
           <dl class="catalog-table">
@@ -60,11 +61,11 @@
             <dt>Цена</dt>
               <dd>1000 P.</dd>
           </dl>
-          <a class="order-button" href="#">Заказать</a>
+          <a class="order-button catalog-button" href="#">Заказать</a>
         </li>
         <li class="catalog-item">
           <a href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="">
+            <img class="catalog-item__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="">
             <h3 class="catalog-item__title">Cat Energy PRO 500 г</h3>
           </a>
           <dl class="catalog-table">
@@ -75,11 +76,11 @@
             <dt>Цена</dt>
               <dd>700 Р.</dd>
           </dl>
-          <a class="order-button" href="#">Заказать</a>
+          <a class="order-button catalog-button" href="#">Заказать</a>
         </li>
         <li class="catalog-item">
           <a href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="">
+            <img class="catalog-item__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="">
             <h3 class="catalog-item__title">Cat Energy PRO 1000 г</h3>
           </a>
           <dl class="catalog-table">
@@ -90,11 +91,11 @@
             <dt>Цена</dt>
               <dd>1000 Р.</dd>
           </dl>
-          <a class="order-button" href="#">Заказать</a>
+          <a class="order-button catalog-button" href="#">Заказать</a>
         </li>
         <li class="catalog-item">
           <a href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="">
+            <img class="catalog-item__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="">
             <h3 class="catalog-item__title">Cat Energy SLIM 500 г</h3>
           </a>
           <dl class="catalog-table">
@@ -105,11 +106,11 @@
             <dt>Цена</dt>
               <dd>400 Р.</dd>
           </dl>
-          <a class="order-button" href="#">Заказать</a>
+          <a class="order-button catalog-button" href="#">Заказать</a>
         </li>
         <li class="catalog-item">
           <a href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="">
+            <img class="catalog-item__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="">
             <h3 class="catalog-item__title">Cat Energy SLIM 1000 г</h3>
           </a>
           <dl class="catalog-table">
@@ -120,11 +121,11 @@
             <dt>Цена</dt>
               <dd>700 Р.</dd>
           </dl>
-          <a class="order-button" href="#">Заказать</a>
+          <a class="order-button catalog-button" href="#">Заказать</a>
         </li>
         <li class="catalog-item">
           <a href="#">
-            <img class="catalog-item__image" src="https://via.placeholder.com/140x144" width="140" height="144" alt="">
+            <img class="catalog-item__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="">
             <h3 class="catalog-item__title">Cat Energy SLIM 500 г</h3>
           </a>
           <dl class="catalog-table">
@@ -135,91 +136,93 @@
             <dt>Цена</dt>
               <dd>500 Р.</dd>
           </dl>
-          <a class="order-button" href="#">Заказать</a>
+          <a class="order-button catalog-button" href="#">Заказать</a>
       </li>
       </ul>
       <section class="additional-goods">
         <h2 class="visually-hidden">Список дополнительных товаров</h2>
-        <span class="additional-goods__title">Показать еще 100500 товаров</span>
-        <span class="additional-goods__text">На самом деле вкусов гораздо больше!</span>
-        <a class="additional-goods__button" type="button">Показать все</a>
+        <p class="additional-goods__title">Показать еще 100500 товаров</p>
+        <p class="additional-goods__text">На самом деле вкусов гораздо больше!</p>
+        <a href="#" class="additional-goods__button" type="button">Показать все</a>
       </section>
-      <h2 class="additional-catalog__title">Дополнительные товары</h2>
-      <ul class="additional-catalog__list">
-        <li class="additional-catalog__item">
-          <a href="#">
-            <h3 class="additional-catalog-item__title">Сахарозаменитель</h3>
-          </a>
-            <dl class="additional-catalog__table">
-              <dt>1 упаковка (100 г)</dt>
-                <dd>200 Р.</dd>
-            </dl>
-          <a class="order-button" href="#">Заказать</a>
-        </li>
-        <li class="additional-catalog__item">
-          <a href="#">
-            <h3 class="additional-catalog-item__title">Питьевая вода</h3>
-          </a>
-            <dl class="additional-catalog__table">
-              <dt>5 литров</dt>
-                <dd>50 Р.</dd>
-            </dl>
-          <a class="order-button" href="#">Заказать</a>
-        </li>
-        <li class="additional-catalog__item">
-          <a href="#">
-            <h3 class="additional-catalog-item__title">Молоко</h3>
-          </a>
-            <dl class="additional-catalog__table">
-              <dt>1 литр</dt>
-                <dd>100 Р.</dd>
-            </dl>
-          <a class="order-button" href="#">Заказать</a>
-        </li>
-        <li class="additional-catalog__item">
-          <a href="#">
-            <h3 class="additional-catalog-item__title">Витамины</h3>
-          </a>
-            <dl class="additional-catalog__table">
-              <dt>1 упаковка (30 г)</dt>
-                <dd>300 Р.</dd>
-            </dl>
-          <a class="order-button" href="#">Заказать</a>
-        </li>
-      </ul>
+      <section class="additional-catalog__section">
+        <h2 class="additional-catalog__title">Дополнительные товары</h2>
+        <ul class="additional-catalog__list">
+          <li class="additional-catalog__item">
+            <a href="#">
+              <h3 class="additional-catalog-item__title">Сахарозаменитель</h3>
+            </a>
+              <dl class="additional-catalog__table">
+                <dt>1 упаковка (100 г)</dt>
+                  <dd>200 Р.</dd>
+              </dl>
+            <a class="order-button catalog-button" href="#">Заказать</a>
+          </li>
+          <li class="additional-catalog__item">
+            <a href="#">
+              <h3 class="additional-catalog-item__title">Питьевая вода</h3>
+            </a>
+              <dl class="additional-catalog__table">
+                <dt>5 литров</dt>
+                  <dd>50 Р.</dd>
+              </dl>
+            <a class="order-button catalog-button" href="#">Заказать</a>
+          </li>
+          <li class="additional-catalog__item">
+            <a href="#">
+              <h3 class="additional-catalog-item__title">Молоко</h3>
+            </a>
+              <dl class="additional-catalog__table">
+                <dt>1 литр</dt>
+                  <dd>100 Р.</dd>
+              </dl>
+            <a class="order-button catalog-button" href="#">Заказать</a>
+          </li>
+          <li class="additional-catalog__item">
+            <a href="#">
+              <h3 class="additional-catalog-item__title">Витамины</h3>
+            </a>
+              <dl class="additional-catalog__table">
+                <dt>1 упаковка (30 г)</dt>
+                  <dd>300 Р.</dd>
+              </dl>
+            <a class="order-button catalog-button" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
       <div class="gift-section">
         <p class="gift-section__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
-      <div class="cooperation-wrapper">
-        <p class="cooperation-invite">приглашаем к сотрудничеству дилеров!</p>
-        <address class="cooperation-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="cooperation__wrapper">
+        <p class="cooperation__invite">приглашаем к сотрудничеству дилеров!</p>
+        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </main>
 
     <footer class="page-footer">
-      <img class="page-footer__logo" src="https://via.placeholder.com/128x24" width="124" height="24" alt="Кэт энерджи логотип">
+      <img class="page-footer__logo" src="img/logo-footer.svg" width="124" height="24" alt="Кэт энерджи логотип">
       <ul class="page-footer__social">
         <li class="social-item">
           <a href="#">
-            <img src="https://via.placeholder.com/22x12" width="22" height="12" alt="вконтакте">
+            <img src="img/icon-vk.svg" width="22" height="12" alt="вконтакте">
           </a>
         </li>
         <li class="social-item">
           <a href="#">
-            <img src="https://via.placeholder.com/17x17" width="17" height="17" alt="инстаграм">
+            <img src="img/icon-insta.svg" width="17" height="17" alt="инстаграм">
           </a>
         </li>
         <li class="social-item">
           <a href="#">
-            <img src="https://via.placeholder.com/10x19" width="10" height="19" alt="фейсбук">
+            <img src="img/icon-fb.svg" width="10" height="19" alt="фейсбук">
           </a>
         </li>
       </ul>
         <div class="footer-copyrights">
           <a class="footer-copyrights__link" href="#">HTML Academy</a>
           <a href="#">
-            <img class="footer-copyrights__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy логотип">
+            <img class="footer-copyrights__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy логотип">
           </a>
         </div>
     </footer>

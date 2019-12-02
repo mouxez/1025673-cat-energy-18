@@ -3,63 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39" alt="Кэт энерджи логотип">
+        <img class="page-header__logo-image" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Кэт энерджи логотип">
       </a>
-      <button class="main-nav__toggle" type="button">Главное меню</button>
+      <button class="main-nav__toggle" type="button"></button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-              <li class="site-list__item--active">
-                  <a>Главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="catalog.html">Каталог продукции</a>
-                </li>
-                <li class="site-list__item">
-                  <a href="#">Подбор программы</a>
-                </li>
+              <li class="site-list__item site-list__item--active">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="page-main">
-      <div class="title-container">
-        <h1 class="page-title__main">Функциональное питание для котов</h1>
-        <span class="page-title__motivation">Занялся собой? Займись котом!</span>
+    <main class="main-page container">
+      <div class="main-page__title-container">
+        <h1 class="main-page__title">Функциональное питание для котов</h1>
+        <span class="main-page__motivation">Занялся собой? Займись котом!</span>
       </div>
-      <button type="button">Подобрать программу</button>
+      <button class="main-page__button order-button" type="button">Подобрать программу</button>
       <ul class="options-list">
         <li class="options-list__weight-loss">
           <h3 class="options-list__title">Похудение</h3>
-          <img class="options-list__image" src="https://via.placeholder.com/50x51" width="50" height="51" alt="изображение кошки">
+          <img class="options-list__image" src="img/icon-cat-slim.svg" width="50" height="51" alt="изображение кошки">
           <p class="options-list__paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="#" class="list-link">Каталог Slim</a>
         </li>
         <li class="options-list__weight-gain">
             <h3 class="options-list__title">Набор массы</h3>
-            <img class="options-list__image" src="https://via.placeholder.com/67x50" width="67" height="50" alt="изображение кошки">
+            <img class="options-list__image" src="img/icon-cat-pro.svg" width="67" height="50" alt="изображение кошки">
             <p class="options-list__paragraph">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a href="#" class="options-list__link">Каталог pro</a>
         </li>
       </ul>
       <h2 class="how-it-works__title">Как это работает</h2>
       <ul class="how-it-works__list">
-        <li class="how-it-works__item">
+        <li class="how-it-works__item--leaf">
           <p class="how-it-works__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="how-it-works__item">
+        <li class="how-it-works__item--powder">
           <p class="how-it-works__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
-        <li class="how-it-works__item">
+        <li class="how-it-works__item--dining">
           <p class="how-it-works__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="how-it-works__item">
+        <li class="how-it-works__item--clock">
           <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
@@ -82,36 +83,36 @@
           <span class="switch-text">Стало</span>
         </div>
       </section>
-      <div class="cooperation-wrapper--white">
-        <p class="cooperation-invite">приглашаем к сотрудничеству дилеров!</p>
-        <address class="cooperation-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="cooperation__wrapper--white">
+        <p class="cooperation__invite">приглашаем к сотрудничеству дилеров!</p>
+        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="380" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </main>
 
     <footer class="page-footer">
-      <img class="page-footer__logo" src="https://via.placeholder.com/128x24" width="124" height="24" alt="Кэт энерджи логотип">
+      <img class="page-footer__logo" src="img/logo-footer.svg" width="124" height="24" alt="Кэт энерджи логотип">
       <ul class="page-footer__social">
         <li class="social-item">
           <a href="#">
-            <img src="https://via.placeholder.com/22x12" width="22" height="12" alt="вконтакте">
+            <img src="img/icon-vk.svg" width="22" height="12" alt="вконтакте">
           </a>
         </li>
         <li class="social-item">
           <a href="#">
-            <img src="https://via.placeholder.com/17x17" width="17" height="17" alt="инстаграм">
+            <img src="img/icon-insta.svg" width="17" height="17" alt="инстаграм">
           </a>
         </li>
         <li class="social-item">
           <a href="#">
-            <img src="https://via.placeholder.com/10x19" width="10" height="19" alt="фейсбук">
+            <img src="img/icon-fb.svg" width="10" height="19" alt="фейсбук">
           </a>
         </li>
       </ul>
       <div class="footer-copyrights">
         <a class="footer-copyrights__link" href="#">HTML Academy</a>
         <a href="#">
-          <img class="footer-copyrights__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy логотип">
+          <img class="footer-copyrights__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy логотип">
         </a>
       </div>
     </footer>
