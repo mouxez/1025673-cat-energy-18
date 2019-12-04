@@ -1,93 +1,68 @@
-.text-style {
-  &__title {
+.basic-font {
+  &-brand {
     font-family: @brand-font;
-    font-size: 36px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.67;
     letter-spacing: normal;
+  }
+
+  &-paragraph {
+    font-family: @font-paragraph;
+    color: @font-paragraph-color;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+  }
+}
+
+.text-style {
+  &__title {
+    font-size: 36px;
     color: @heading-color;
   }
 
   &__button {
-    font-family: @brand-font;
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: left;
     color: @heading-color;
   }
 
   &__paragraph--big {
-    font-family: @font-paragraph;
-    font-weight: 400;
-    color: @font-paragraph-color;
     font-size: 14px;
-    line-height: 1.29;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
   }
 
   &__paragraph--small {
-    font-family: @font-paragraph;
     font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: left;
-    color: @font-paragraph-color;
   }
 
   &__form-element {
-    font-family: @brand-font;
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.13;
-    letter-spacing: normal;
     text-transform: uppercase;
   }
 
   &__form-page--h2 {
-    font-family: @brand-font;
     font-size: 24px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
     color: @heading-color;
   }
 
   &__additional-catalog {
-    font-family: @brand-font;
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
     color: #222222;
+  }
+
+  &__form-page--text {
+    font-size: 14px;
+    color: @heading-color;
+    text-transform: uppercase;
   }
 }
 
 .order-button {
   background-color: @brand-color;
-  font-family: @brand-font;
   font-size: 14px;
-  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .site-size {
