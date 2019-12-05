@@ -1,0 +1,30 @@
+.gift-section {
+  min-height: 289px;
+  width: 280px;
+  background-image: url("/img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @brand-color;
+  margin-left: 20px;
+}
+
+.gift-section__text {
+  .basic-font-paragraph;
+  .text-style__paragraph--big;
+  color: #ffffff;
+  width: 159px;
+  margin-top: 68px;
+  margin-left: 75px;
+  display: inline-block;
+}
+
+.gift-section__text::before {
+  content: "";
+  background-image: url("/img/icon-gift.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: block;
+  width: 56px;
+  height: 61px;
+}
