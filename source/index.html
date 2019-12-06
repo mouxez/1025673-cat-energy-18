@@ -2,28 +2,32 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Кэт энерджи логотип">
-      </a>
-      <button class="main-nav__toggle" type="button"></button>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile-header-svg.svg" width="191" height="39" alt="Кэт энерджи логотип">
+        </a>
+        <button class="main-nav__toggle" type="button"></button>
+      </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a>Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html">Подбор программы</a>
-              </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -69,9 +73,9 @@
         <h2 class="example-section__title">Живой пример</h2>
         <p class="example-section__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <dl class="example-section__list">
-          <dt>снижение веса</dt>
+          <dt class="example-section__weight-loss">снижение веса</dt>
             <dd class="example-section__value">5 кг</dd>
-          <dt>затрачено времени</dt>
+          <dt class="example-section__time-spent">затрачено времени</dt>
             <dd class="example-section__value">60 дней</dd>
         </dl>
         <p class="example-section__cost">Затраты на питание: 15 000 руб.</p>
@@ -89,21 +93,20 @@
       </div>
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="380" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </main>
-
     <footer class="page-footer">
       <img class="page-footer__logo" src="img/logo-footer.svg" width="124" height="24" alt="Кэт энерджи логотип">
       <ul class="page-footer__social">
-        <li class="social-item">
+        <li class="social-item  social-item__vk">
           <a href="#">
             <img src="img/icon-vk.svg" width="22" height="12" alt="вконтакте">
           </a>
         </li>
-        <li class="social-item">
+        <li class="social-item social-item__insta">
           <a href="#">
             <img src="img/icon-insta.svg" width="17" height="17" alt="инстаграм">
           </a>
         </li>
-        <li class="social-item">
+        <li class="social-item social-item__fb">
           <a href="#">
             <img src="img/icon-fb.svg" width="10" height="19" alt="фейсбук">
           </a>

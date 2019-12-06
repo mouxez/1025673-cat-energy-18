@@ -11,11 +11,14 @@
 .how-it-works__list {
   width: 320px;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .how-it-works__text {
   .basic-font-paragraph;
   .text-style__paragraph--big;
+  max-width: 195px;
 }
 
 .how-it-works__item {
@@ -40,4 +43,13 @@
 .how-it-works__item--clock::before {
   .how-it-works__item--style;
   background-image: url("/img/advantage-clock@1x.png");
+}
+
+.how-it-works__item--leaf,
+.how-it-works__item--powder,
+.how-it-works__item--dining,
+.how-it-works__item--clock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

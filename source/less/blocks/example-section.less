@@ -3,6 +3,8 @@
   margin-top: 42px;
   padding-left: 20px;
   width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .example-section__title {
@@ -12,11 +14,13 @@
   line-height: 1.67;
   margin-top: 36px;
   font-weight: normal;
+  display: inline-block;
 }
 
 .example-section__text {
   .basic-font-paragraph;
   .text-style__paragraph--big;
+  max-width: 266px;
 }
 
 .example-section__list dt {
@@ -28,12 +32,23 @@
   color: @font-paragraph-color;
 }
 
+.example-section__list {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .example-section__value {
   font-family: @brand-font;
   font-size: 24px;
   font-weight: normal;
   line-height: 1;
   color: @heading-color;
+  border: 2px solid #cdcdcd;
+  border-radius: 7%;
+  display: inline-block;
+  padding: 12px;
 }
 
 .example-section__cost {
@@ -43,6 +58,7 @@
   line-height: 1.43;
   color: @heading-color;
   text-transform: uppercase;
+  margin-left: 45px;
 }
 
 .example-section__switch-text {
@@ -52,6 +68,11 @@
   line-height: 1.25;
   color: @heading-color;
   text-transform: uppercase;
+}
+
+.example-section__switch-wrapper {
+  // display: flex;
+  // flex-direction: row;
 }
 
 .example-section__switch-wrapper::before {
