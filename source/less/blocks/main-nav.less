@@ -38,3 +38,26 @@
 .main-nav__wrapper {
   margin-left: -40px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+
+  .main-nav__item {
+    width: 170px;
+    border: none;
+    font-size: 18px;
+    padding: 0 0;
+  }
+
+  .main-nav__item:first-child {
+  }
+
+}

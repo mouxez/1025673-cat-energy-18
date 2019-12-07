@@ -62,3 +62,56 @@
   .basic-font-paragraph;
   .text-style__paragraph--big;
 }
+
+@media (min-width: @tablet-width) {
+  .options-list::before {
+    content: "";
+    background-image: url("/img/index-can-tablet@1x.jpg");
+    width: 709px;
+    min-height: 609px;
+    object-fit: contain;
+    display: block;
+    // position: absolute;
+  }
+
+  .options-list__weight-loss,
+  .options-list__weight-gain {
+    width: 708px;
+    min-height: 372px;
+  }
+
+  .options-list__title {
+    font-size: 36px;
+  }
+
+  .options-list__paragraph {
+    font-size: 16px;
+  }
+
+  .options-list__title::after {
+    width: 200px;
+    height: 200px;
+  }
+
+  .options-list__link--slim::after,
+  .options-list__link--pro::after {
+    background-image: url("/img/icon-right-arrow-long.svg");
+    width: 24px;
+    height: 11px;
+  }
+
+  .options-list__link--slim,
+  .options-list__link--pro {
+    font-size: 20px;
+  }
+
+  .options-list__image--slim {
+    width: 141px;
+    height: 194px;
+  }
+
+  .options-list__image--pro {
+    width: 268px;
+    height: 113px;
+  }
+}

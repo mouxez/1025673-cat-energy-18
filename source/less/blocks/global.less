@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 320px;
 }
 
 img {
@@ -49,4 +50,18 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 767px;
+    // padding: 0 64px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1440px;
+    // padding: 0 120px;
+  }
 }

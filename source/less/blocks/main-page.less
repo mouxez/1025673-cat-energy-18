@@ -1,5 +1,6 @@
 .main-page__title-container {
   background-image: url("/img/index-background-mobile@1x.jpg");
+  background-color: @brand-color;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 305px;
@@ -14,7 +15,6 @@
   font-weight: 400;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
@@ -34,6 +34,7 @@
   text-align: center;
   color: #ffffff;
   margin-left: 75px;
+  text-transform: uppercase;
 }
 
 .main-page__title-container::after {
@@ -53,4 +54,35 @@
   min-height: 40px;
   margin-top: 130px;
   margin-left: 20px;
+  display: inline-block;
+}
+
+@media (min-width: @tablet-width) {
+  .main-page__title-container {
+    background-image: none;
+    background-color: #ffffff;
+    width: 767px;
+  }
+
+  .main-page__title,
+  .main-page__motivation {
+    color: @heading-color;
+  }
+
+  .main-page__title {
+    font-size: 60px;
+    width: 490px;
+  }
+
+  .main-page__motivation {
+    font-size: 20px;
+  }
+
+  .main-page__title-container::after {
+    display: none;
+  }
+
+  .main-page__button {
+    margin-top: -150px;
+  }
 }

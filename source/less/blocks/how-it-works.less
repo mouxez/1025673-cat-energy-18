@@ -21,9 +21,9 @@
   max-width: 195px;
 }
 
-.how-it-works__item {
-  margin-top: 35px;
-}
+// .how-it-works__item {
+//   margin-top: 35px;
+// }
 
 .how-it-works__item--leaf::before {
   .how-it-works__item--style;
@@ -52,4 +52,47 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.how-it-works__additional-span {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .how-it-works__list {
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .how-it-works__title {
+    font-size: 60px;
+  }
+  .how-it-works__item--leaf::before,
+  .how-it-works__item--powder::before,
+  .how-it-works__item--dining::before,
+  .how-it-works__item--clock::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-it-works__item--leaf,
+  .how-it-works__item--powder,
+  .how-it-works__item--dining,
+  .how-it-works__item--clock {
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .how-it-works__additional-span {
+    display: inline-block;
+    font-family: @brand-font;
+    font-size: 281px;
+    color: @section-background-color;
+  }
+
+  .how-it-works__text {
+    font-size: 16px;
+  }
+
 }
