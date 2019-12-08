@@ -31,7 +31,35 @@
 .catalog-list {
   list-style-type: none;
   width: 320px;
-  border: 1px solid @section-background-color;
+  // border: 1px solid @section-background-color;
   display: flex;
   flex-direction: column;
+}
+
+.catalog-item__image--tablet,
+.catalog-item__image--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-item {
+    background-color: @section-background-color;
+    width: 324px;
+  }
+
+  .catalog-item__image--tablet {
+    display: inline-block;
+  }
+
+  .catalog-item__image {
+    display: none;
+  }
+
+  .catalog-list {
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
 }
