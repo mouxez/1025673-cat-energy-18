@@ -18,7 +18,6 @@
   line-height: 1;
   text-align: center;
   letter-spacing: normal;
-  color: @heading-color;
   text-transform: uppercase;
   list-style-type: none;
   display: flex;
@@ -27,6 +26,7 @@
 
 .main-nav__list a {
   color: @heading-color;
+  font-weight: normal;
 }
 
 .main-nav__item {
@@ -59,7 +59,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav__list a {
+    color: @heading-color;
+  }
+
   .main-nav__list {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .main-nav__service a {
     color: #ffffff;
   }
 }

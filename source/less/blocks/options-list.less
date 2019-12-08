@@ -53,7 +53,6 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin-left: -20px;
 }
 
 .options-list__paragraph {
@@ -67,6 +66,8 @@
   .options-list::before {
     content: "";
     background-image: url("/img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 709px;
     min-height: 609px;
     object-fit: contain;
@@ -113,5 +114,25 @@
   .options-list__image--pro {
     width: 268px;
     height: 113px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .options-list::before {
+    // background-image: url("/img/index-can-desktop@1x.png");
+    // position: relative;
+    // top: -700px;
+    // left: 300px;
+    display: none;
+  }
+
+  .options-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .options-list__weight-loss,
+  .options-list__weight-gain {
+    width: 570px;
   }
 }
