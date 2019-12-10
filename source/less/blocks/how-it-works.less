@@ -11,33 +11,87 @@
 .how-it-works__list {
   width: 320px;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .how-it-works__text {
   .basic-font-paragraph;
   .text-style__paragraph--big;
-}
-
-.how-it-works__item {
-  margin-top: 35px;
+  max-width: 195px;
 }
 
 .how-it-works__item--leaf::before {
   .how-it-works__item--style;
-  background-image: url("/img/advantage-leaf@1x.png");
+  background-image: url("../img/advantage-leaf@1x.png");
 }
 
 .how-it-works__item--powder::before {
   .how-it-works__item--style;
-  background-image: url("/img/advantage-powder@1x.png");
+  background-image: url("../img/advantage-powder@1x.png");
 }
 
 .how-it-works__item--dining::before {
   .how-it-works__item--style;
-  background-image: url("/img/advantage-dining@1x.png");
+  background-image: url("../img/advantage-dining@1x.png");
 }
 
 .how-it-works__item--clock::before {
   .how-it-works__item--style;
-  background-image: url("/img/advantage-clock@1x.png");
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
+.how-it-works__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .how-it-works__list {
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    counter-reset: section;
+  }
+
+  .how-it-works__text::after {
+    object-fit: contain;
+    counter-increment: section;
+    content: "" counter(section);
+    display: inline-block;
+    font-family: @brand-font;
+    font-size: 281px;
+    color: @section-background-color;
+    vertical-align: middle;
+  }
+
+  .how-it-works__title {
+    font-size: 60px;
+  }
+
+  .how-it-works__item--leaf::before,
+  .how-it-works__item--powder::before,
+  .how-it-works__item--dining::before,
+  .how-it-works__item--clock::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .how-it-works__item {
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .how-it-works__text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .how-it-works__list {
+    width: 1440px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
 }

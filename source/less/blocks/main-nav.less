@@ -1,11 +1,13 @@
 .main-nav__toggle {
-  background-image: url("/img/icon-mobile-menu.svg");
+  background-image: url("../img/icon-mobile-menu.svg");
   background-position: center;
   width: 25px;
   height: 19px;
   border: none;
-  margin-left: 35px;
-  display: inline-block;
+  display: block;
+  align-self: center;
+  margin-top: 10px;
+  margin-left: 65px;
 }
 
 .main-nav__list {
@@ -15,20 +17,57 @@
   line-height: 1;
   text-align: center;
   letter-spacing: normal;
-  color: @heading-color;
   text-transform: uppercase;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__list a {
   color: @heading-color;
+  font-weight: normal;
 }
 
 .main-nav__item {
   padding: 24px 24px 24px 23px;
   border: 1px solid @section-background-color;
+  width: 320px;
 }
 
 .main-nav__wrapper {
-  margin-right: 40px;
+  margin-left: -40px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+
+  .main-nav__item {
+    width: 170px;
+    border: none;
+    font-size: 18px;
+    padding: 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list a {
+    color: @heading-color;
+  }
+
+  .main-nav__list {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .main-nav__service a {
+    color: @simple-background-color;
+  }
 }

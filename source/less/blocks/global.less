@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 320px;
 }
 
 img {
@@ -22,8 +23,8 @@ a {
 
 @font-face {
   font-family: "Oswald";
-  src: url("/fonts/oswaldregular.woff2") format("woff2"),
-    url("/fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
 
   font-weight: 400;
   font-style: normal;
@@ -31,8 +32,8 @@ a {
 
 @font-face {
   font-family: "Oswald";
-  src: url("/fonts/oswaldmedium.woff2") format("woff2"),
-    url("/fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
 
   font-weight: 500;
   font-style: normal;
@@ -49,4 +50,16 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 767px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1440px;
+  }
 }

@@ -1,10 +1,35 @@
 .page-header {
-  background-color: #ffffff;
+  background-color: @simple-background-color;
   min-height: 65px;
   .site-size;
+  width: 320px;
 }
 
 .page-header__logo-image {
   margin-left: 20px;
   margin-top: 11px;
+}
+
+.page-header__wrapper {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    width: 767px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
+  }
 }

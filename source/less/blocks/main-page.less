@@ -1,5 +1,6 @@
 .main-page__title-container {
-  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: @brand-color;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 305px;
@@ -8,37 +9,27 @@
 
 .main-page__title {
   width: 245px;
+  .basic-font-brand;
   min-height: 74px;
-  font-family: @brand-font;
   font-size: 36px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
+  color: @simple-background-color;
   margin-left: 38px;
 }
 
 .main-page__motivation {
   width: 198px;
   min-height: 16px;
-  font-family: @brand-font;
+  .basic-font-brand;
   font-size: 14px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
+  color: @simple-background-color;
   margin-left: 75px;
+  text-transform: uppercase;
 }
 
 .main-page__title-container::after {
   content: "";
-  background-image: url("/img/index-can-mobile@1x.png");
+  background-image: url("../img/index-can-mobile@1x.png");
   width: 280px;
   min-height: 270px;
   object-fit: contain;
@@ -53,4 +44,73 @@
   min-height: 40px;
   margin-top: 130px;
   margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (min-width: @tablet-width) {
+  .main-page__title-container {
+    background-image: none;
+    background-color: @simple-background-color;
+    width: 767px;
+  }
+
+  .main-page__title,
+  .main-page__motivation {
+    color: @heading-color;
+  }
+
+  .main-page__title {
+    font-size: 60px;
+    width: 490px;
+  }
+
+  .main-page__motivation {
+    font-size: 20px;
+  }
+
+  .main-page__title-container::after {
+    display: none;
+  }
+
+  .main-page__button {
+    margin-top: -150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-page__wrap {
+    display: flex;
+  }
+
+  .main-page__background--desktop {
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    width: 720px;
+    height: 696px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -65px;
+  }
+
+  .main-page__button {
+    position: relative;
+    top: -300px;
+    left: 40px;
+  }
+
+  .main-page__title-container::after {
+    content: "";
+    object-fit: contain;
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    z-index: 1000;
+    top: -70px;
+    left: 320px;
+    width: 552px;
+    height: 499px;
+  }
 }
