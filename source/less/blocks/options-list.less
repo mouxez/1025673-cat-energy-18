@@ -3,6 +3,12 @@
   background-color: @section-background-color;
   width: 280px;
   min-height: 266px;
+  margin: 0 auto;
+}
+
+.options-list__wrap {
+  width: 320px;
+  margin-left: -20px;
 }
 
 .options-list--weight-gain {
@@ -31,9 +37,12 @@
 
 .options-list__link--slim,
 .options-list__link--pro {
-  .basic-font-paragraph;
+  .basic-font-brand;
   .text-style__button;
+  display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
+  margin: 20px;
 }
 
 .options-list__link--slim::after,
@@ -43,7 +52,8 @@
   width: 25px;
   height: 15px;
   object-fit: contain;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,10 +66,13 @@
 }
 
 .options-list__paragraph {
-  padding-left: 21px;
-  padding-right: 36px;
+  padding-bottom: 23px;
+  margin-left: 20px;
   .basic-font-paragraph;
   .text-style__paragraph--big;
+  border-bottom: 2px solid #cdcdcd;
+  width: 240px;
+  line-height: 1.29;
 }
 
 .options-list__paragraph_1::before {
@@ -146,6 +159,7 @@
   .options-list {
     flex-direction: row;
     justify-content: space-around;
+    width: 1440px;
   }
 
   .options-list--weight-loss,
