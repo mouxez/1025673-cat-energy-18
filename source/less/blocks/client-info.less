@@ -2,6 +2,8 @@
   .basic-font-brand;
   .text-style__form-element;
   color: #222222;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 input::placeholder {
@@ -9,4 +11,47 @@ input::placeholder {
   font-size: 16px;
   color: @font-paragraph-color;
   text-transform: uppercase;
+}
+
+.client-info__input--name {
+  min-width: 229px;
+  min-height: 45px;
+  margin-left: 15px;
+}
+
+.client-info__input--weight {
+  min-width: 204px;
+  min-height: 45px;
+  margin-left: 18px;
+  margin-top: 15px;
+}
+
+.client-info__input--age {
+  min-width: 172px;
+  min-height: 45px;
+  margin-top: 15px;
+  margin-left: 16px;
+}
+
+.client-info__label--age::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid @section-background-color;
+  margin-top: 25px;
+}
+
+.client-info__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.client-info__radio {
+  margin-top: 30px;
+}
+
+.client-info__label--do-not-know::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid @section-background-color;
+  margin-top: 25px;
 }

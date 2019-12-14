@@ -16,51 +16,53 @@
         </a>
         <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
-      <a class="main-nav">
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--help">
                   <a href="index.html">Главная</a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__item main-nav__item--help">
                   <a href="catalog.html">Каталог продукции</a>
                 </li>
-                <li class="main-nav__item main-nav__item--active">
+                <li class="main-nav__item main-nav__item--help main-nav__item--active">
                   <a>Подбор программы</a>
                 </li>
           </ul>
         </div>
-      </a>
+      </nav>
     </header>
 
     <main class="container">
       <h1 class="form-page__title">Подбор программы</h1>
       <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="client-info__form" action="https://echo.htmlacademy.ru/" method="POST">
-        <label class="client-info__label">
-          <span class="client-info__span">Имя:*<span>
-          <input class="client-info__input" type="text" placeholder="БАРСИК" name="name">
-        </label>
-        <label class="client-info__label">
-          <span class="client-info__span">Вес (кг):*<span>
-          <input class="client-info__input" type="number" placeholder="7" name="weight">
-        </label>
-        <label class="client-info__label">
-          <span class="client-info__span">Возраст (лет):<span>
-          <input class="client-info__input" type="number" placeholder="7" name="age">
-        </label>
-        <label class="client-info__label--radio">
-          <input class="client-info__radio" type="radio" checked name="program" value="loss">
-          <span class="client-info__span">Похудение<span>
-        </label>
-        <label class="client-info__label--radio">
-          <input class="client-info__radio" type="radio" name="program" value="gain">
-          <span class="client-info__span">Набор массы<span>
-        </label>
-        <label class="client-info__label--radio">
-          <input class="client-info__radio" type="radio" name="program" value="unidentified">
-          <span class="client-info__span">Не знаю (Нужен ваш совет)<span>
-        </label>
+          <label class="client-info__label">
+            <span class="client-info__span">Имя:*<span>
+            <input class="client-info__input client-info__input--name" type="text" placeholder="БАРСИК" name="name">
+          </label>
+          <label class="client-info__label">
+            <span class="client-info__span">Вес (кг):*<span>
+            <input class="client-info__input client-info__input--weight" type="number" placeholder="7" name="weight">
+          </label>
+          <label class="client-info__label client-info__label--age">
+            <span class="client-info__span">Возраст (лет):<span>
+            <input class="client-info__input client-info__input--age" type="number" placeholder="7" name="age">
+          </label>
+          <div class="client-info__wrap">
+            <label class="client-info__label--radio">
+              <input class="client-info__radio" type="radio" checked name="program" value="loss">
+              <span class="client-info__span">Похудение<span>
+            </label>
+            <label class="client-info__label--radio">
+              <input class="client-info__radio" type="radio" name="program" value="gain">
+              <span class="client-info__span">Набор массы<span>
+            </label>
+            <label class="client-info__label--radio client-info__label--do-not-know">
+              <input class="client-info__radio" type="radio" name="program" value="unidentified">
+              <span class="client-info__span">Не знаю (Нужен ваш совет)<span>
+            </label>
+        </div>
       <h2 class="client-contacts__title">Контактные данные (владельца кота)</h2>
         <label class="client-contacts__label">
           <span class="client-contacts__span">E-mail:*<span>

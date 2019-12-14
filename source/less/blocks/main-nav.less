@@ -96,25 +96,17 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__list a {
-    color: @heading-color;
-  }
-
   .main-nav__list {
     position: relative;
     z-index: 1000;
   }
 
-  .main-nav__service a {
-    color: @simple-background-color;
-  }
-
-  .main-nav__service--active a {
+  .main-nav__list .main-nav__service--active a {
     border-bottom: 2px solid @simple-background-color;
   }
 
-  .main-nav__item--active a {
-    border-bottom: 2px solid @brand-color;
+  .main-nav__item a {
+    color: @simple-background-color;
   }
 
   .main-nav--closed {
@@ -127,6 +119,18 @@
 
   .main-nav__item:nth-child(2) {
     margin-right: 35px;
+  }
+
+  .main-nav__item--help a {
+    color: @heading-color;
+  }
+
+  .main-nav__list .main-nav__item a[href]:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .main-nav__list .main-nav__item a[href]:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 
 }
