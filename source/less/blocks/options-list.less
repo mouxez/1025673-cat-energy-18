@@ -23,16 +23,21 @@
   .basic-font-brand;
   color: @heading-color;
   font-size: 24px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.options-list__title::after {
+.options-list__title::before {
   content: "";
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: contain;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   background-color: @brand-color;
+  margin-left: 22px;
 }
 
 .options-list__link--slim,
@@ -53,8 +58,7 @@
   height: 15px;
   object-fit: contain;
   display: inline-block;
-  vertical-align: middle;
-  position: absolute;
+  vertical-align: bottom;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -66,6 +70,7 @@
 }
 
 .options-list__paragraph {
+  margin-top: -30px;
   padding-bottom: 23px;
   margin-left: 20px;
   .basic-font-paragraph;
@@ -84,6 +89,9 @@
   min-height: 49px;
   object-fit: contain;
   display: block;
+  position: relative;
+  top: -45px;
+  left: 10px;
 }
 
 .options-list__paragraph_2::before {
@@ -95,6 +103,9 @@
   min-height: 28px;
   object-fit: contain;
   display: block;
+  position: relative;
+  top: -30px;
+  left: -10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -113,6 +124,7 @@
   .options-list--weight-gain {
     width: 708px;
     min-height: 372px;
+    position: relative;
   }
 
   .options-list__title {
@@ -121,9 +133,10 @@
 
   .options-list__paragraph {
     font-size: 16px;
+    border: none;
   }
 
-  .options-list__title::after {
+  .options-list__title::before {
     width: 200px;
     height: 200px;
   }
@@ -165,5 +178,10 @@
   .options-list--weight-loss,
   .options-list--weight-gain {
     width: 570px;
+  }
+
+  .options-list__title::before {
+    width: 100px;
+    height: 100px;
   }
 }

@@ -82,6 +82,14 @@
   .how-it-works__item {
     flex-direction: column;
     width: 300px;
+    align-items: flex-start;
+  }
+
+  .how-it-works__text::after {
+    // position: absolute;
+  }
+
+  .how-it-works__text::after:nth-child(2) {
   }
 
   .how-it-works__text {
@@ -93,6 +101,17 @@
   .how-it-works__list {
     width: 1440px;
     flex-wrap: nowrap;
-    justify-content: space-around;
+  }
+
+  .how-it-works__item {
+    align-items: flex-start;
+  }
+
+  .how-it-works__item:first-child {
+    margin-left: 70px;
+  }
+
+  .how-it-works__title {
+    margin-left: 85px;
   }
 }
