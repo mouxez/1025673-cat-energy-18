@@ -8,3 +8,34 @@
   .basic-font-brand;
   .text-style__form-page--h2;
 }
+
+.extra-section__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.extra-section__label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .extra-section__wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .extra-section__label {
+    margin: 15px 100px 15px 100px;
+  }
+
+  .extra-section__label--vitamin {
+    margin-left: 175px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}

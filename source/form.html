@@ -37,6 +37,8 @@
       <h1 class="form-page__title">Подбор программы</h1>
       <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="client-info__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="client-info__container">
+        <div class="client-info__basic">
           <label class="client-info__label">
             <span class="client-info__span">Имя:*<span>
             <input class="client-info__input client-info__input--name" type="text" placeholder="БАРСИК" name="name">
@@ -49,6 +51,7 @@
             <span class="client-info__span">Возраст (лет):<span>
             <input class="client-info__input client-info__input--age" type="number" placeholder="7" name="age">
           </label>
+        </div>
           <div class="client-info__wrap">
             <label class="client-info__label--radio">
               <input class="client-info__radio" type="radio" checked name="program" value="loss">
@@ -63,36 +66,41 @@
               <span class="client-info__span">Не знаю (Нужен ваш совет)<span>
             </label>
         </div>
+        </div>
       <h2 class="client-contacts__title">Контактные данные (владельца кота)</h2>
-        <label class="client-contacts__label">
-          <span class="client-contacts__span">E-mail:*<span>
-          <input class="client-contacts__input" type="email" placeholder="kuklachev@gmail.com">
-          <svg class="client-contacts__icon--email"></svg>
-        </label>
-        <label class="client-contacts__label">
-          <span class="client-contacts__span">Телефон:*<span>
-          <input class="client-contacts__input" type="tel" placeholder="8 (960) 900-60-90">
-          <svg class="client-contacts__icon--tel"></svg>
-        </label>
+        <div class="client-contacts__wrap">
+          <label class="client-contacts__label">
+            <span class="client-contacts__span">E-mail:*<span>
+            <input class="client-contacts__input client-contacts__input--email" type="email" placeholder="kuklachev@gmail.com">
+            <span class="client-contacts__icon--email"></span>
+          </label>
+          <label class="client-contacts__label">
+            <span class="client-contacts__span">Телефон:*<span>
+            <input class="client-contacts__input client-contacts__input--phone" type="tel" placeholder="8 (960) 900-60-90">
+            <span class="client-contacts__icon--phone"></span>
+          </label>
+        </div>
       <h2 class="client-comment__title">Комментарий</h2>
-        <textarea class="client-contacts__span" name="comment" cols="50" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="client-comment__area" name="comment" cols="50" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       <h2 class="extra-section__title">Дополнительно</h2>
-        <label class="extra-section__label">
-          <input class="extra-section__checkbox" type="checkbox" name="extras" value="sweetener" checked>
-          <span class="extra-section__span">Сахарозаменитель<span>
-        </label>
-        <label class="extra-section__label">
-          <input class="extra-section__checkbox" type="checkbox" name="extras" value="water">
-          <span class="extra-section__span">Питьевая вода<span>
-        </label>
-        <label class="extra-section__label">
-          <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk">
-          <span class="extra-section__span">Молоко<span>
-        </label>
-        <label class="extra-section__label">
-          <input class="extra-section__checkbox" type="checkbox" name="extras" value="vitamin">
-          <span class="extra-section__span">Витамины<span>
-        </label>
+        <div class="extra-section__wrap">
+          <label class="extra-section__label">
+            <input class="extra-section__checkbox" type="checkbox" name="extras" value="sweetener" checked>
+            <span class="extra-section__span">Сахарозаменитель<span>
+          </label>
+          <label class="extra-section__label">
+            <input class="extra-section__checkbox" type="checkbox" name="extras" value="water">
+            <span class="extra-section__span">Питьевая вода<span>
+          </label>
+          <label class="extra-section__label">
+            <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk">
+            <span class="extra-section__span">Молоко<span>
+          </label>
+          <label class="extra-section__label extra-section__label--vitamin">
+            <input class="extra-section__checkbox" type="checkbox" name="extras" value="vitamin">
+            <span class="extra-section__span">Витамины<span>
+          </label>
+        </div>
         <button class="form-page__button order-button">Отправить заявку</button>
       </form>
       <p class="required-fields">* — Обязательные поля</p>
