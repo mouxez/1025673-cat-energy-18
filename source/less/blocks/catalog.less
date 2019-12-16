@@ -13,7 +13,20 @@
 .catalog__table {
   .basic-font-paragraph;
   .text-style__paragraph--small;
-  margin-left: 20px;
+  margin-left: 140px;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.catalog__table dd {
+  margin-top: -13px;
+  margin-left: 64px;
+}
+
+.catalog__table dt {
+  margin-top: 13px;
 }
 
 .catalog__button {
@@ -32,6 +45,7 @@
 
 .catalog__item--link {
   display: flex;
+  margin-left: -20px;
 }
 
 .catalog__list {
@@ -65,11 +79,12 @@
   .order-button;
   .basic-font-brand;
   background-color: @section-background-color;
-  padding: 13px 94px 12px 97px;
+  padding: 13px 80px 12px 80px;
   margin-left: 20px;
   margin-right: 20px;
   display: block;
   margin-top: 25px;
+  color: @font-paragraph-color;
 }
 
 .catalog__goods-title::before {
@@ -90,14 +105,53 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog__table dd {
+    margin-top: -20px;
+  }
+
   .catalog__item {
     background-color: @section-background-color;
     width: 324px;
+    min-height: 431px;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+
+  .catalog__item--more-goods {
+    border: 1px solid @border-color;
+  }
+
+  .catalog__item-title {
+    font-size: 20px;
   }
 
   .catalog__goods {
     width: 324px;
     min-height: 432px;
+  }
+
+  .catalog__goods-title {
+    font-size: 20px;
+  }
+
+  .catalog__goods-text {
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+  }
+
+  .catalog__item--link {
+    flex-direction: column;
+  }
+
+  .catalog__table {
+    margin: auto;
+    font-size: 16px;
+  }
+
+  .catalog__table dt {
+    border-bottom: 1px solid @border-color;
   }
 
   .catalog__list {
@@ -106,6 +160,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -118,6 +173,14 @@
     border: none;
     width: 245px;
     min-height: 423px;
-    margin: 0 20px;
+    margin: 30px 20px 0px 20px;
+  }
+
+  .catalog__button {
+    padding: 14px 52px 14px 52px;
+  }
+
+  .catalog__goods-button {
+    padding: 14px 50px 14px 50px;
   }
 }
