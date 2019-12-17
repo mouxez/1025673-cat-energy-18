@@ -4,6 +4,7 @@
   width: 280px;
   min-height: 266px;
   margin: 0 auto;
+  position: relative;
 }
 
 .options-list__wrap {
@@ -129,16 +130,21 @@
 
   .options-list__title {
     font-size: 36px;
+    margin-left: 55px;
   }
 
   .options-list__paragraph {
     font-size: 16px;
     border: none;
+    margin-left: 55px;
   }
 
   .options-list__title::before {
     width: 200px;
     height: 200px;
+    position: absolute;
+    left: 400px;
+    top: 120px;
   }
 
   .options-list__link--slim::after,
@@ -151,16 +157,24 @@
   .options-list__link--slim,
   .options-list__link--pro {
     font-size: 20px;
+    margin-top: 61px;
+    margin-left: 53px;
   }
 
   .options-list__paragraph_1::before {
     width: 141px;
     height: 194px;
+    position: absolute;
+    left: 460px;
+    top: 100px;
   }
 
   .options-list__paragraph_2::before {
     width: 268px;
     height: 113px;
+    position: absolute;
+    left: 380px;
+    top: 160px;
   }
 }
 
@@ -175,6 +189,32 @@
     width: 1440px;
   }
 
+  .options-list__title {
+    margin-top: 81px;
+    margin-left: 216px;
+  }
+
+  .options-list__paragraph_1,
+  .options-list__paragraph_2 {
+    margin-top: 30px;
+    margin-left: 52px;
+    width: 450px;
+  }
+
+  .options-list__paragraph_1::before {
+    top: 41px;
+    left: 65px;
+    width: 71px;
+    height: 97px;
+  }
+
+  .options-list__paragraph_2::before {
+    top: 69px;
+    left: 34px;
+    width: 134px;
+    height: 57px;
+  }
+
   .options-list--weight-loss,
   .options-list--weight-gain {
     width: 570px;
@@ -183,5 +223,13 @@
   .options-list__title::before {
     width: 100px;
     height: 100px;
+    position: absolute;
+    top: 47px;
+    left: 52px;
+  }
+
+  .options-list__link--slim,
+  .options-list__link--pro {
+    margin-top: 0px;
   }
 }
