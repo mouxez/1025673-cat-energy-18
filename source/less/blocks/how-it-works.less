@@ -65,6 +65,10 @@
     font-size: 281px;
     color: @section-background-color;
     vertical-align: middle;
+    position: absolute;
+    top: -60px;
+    left: 90px;
+    z-index: -1;
   }
 
   .how-it-works__title {
@@ -83,6 +87,12 @@
     flex-direction: column;
     width: 300px;
     align-items: flex-start;
+    position: relative;
+  }
+
+  .how-it-works__item:nth-child(3),
+  .how-it-works__item:nth-child(4) {
+    margin-top: 160px;
   }
 
   .how-it-works__text {
@@ -102,6 +112,11 @@
 
   .how-it-works__item:first-child {
     margin-left: 70px;
+  }
+
+  .how-it-works__item:nth-child(3),
+  .how-it-works__item:nth-child(4) {
+    margin-top: 0px;
   }
 
   .how-it-works__title {
