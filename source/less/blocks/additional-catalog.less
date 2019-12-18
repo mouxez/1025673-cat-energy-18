@@ -1,3 +1,7 @@
+.additional-catalog__section {
+  position: relative;
+}
+
 .additional-catalog__title {
   .basic-font-brand;
   font-size: 24px;
@@ -5,6 +9,18 @@
   margin: 31px 20px 0 20px;
   border-bottom: 2px solid @section-background-color;
   padding-bottom: 30px;
+}
+
+.additional-catalog__title::after {
+  content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 3px;
+    width: 53px;
+    background-color: @brand-color;
+    top: 13px;
+    left: 275px;
 }
 
 .additional-catalog-item__title {
