@@ -1,13 +1,21 @@
 .catalog__title {
   .basic-font-brand;
   .text-style__title;
-  margin-left: 22px;
+  border-bottom: 1px solid #ededed;
+  padding-left: 22px;
+  padding-bottom: 35px;
 }
 
 .catalog__item-title {
   .basic-font-brand;
   .text-style__button;
   text-transform: uppercase;
+  width: 74px;
+  height: 50px;
+}
+
+.catalog__item-image {
+  margin-left: 40px;
 }
 
 .catalog__table {
@@ -18,30 +26,42 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: 160px;
+  margin-top: -70px;
+  width: 140px;
 }
 
 .catalog__table dd {
   margin-top: -13px;
-  margin-left: 64px;
+  margin-left: 100px;
 }
 
 .catalog__table dt {
-  margin-top: 13px;
+  margin-top: 10px;
 }
 
 .catalog__button {
   margin-top: 30px;
-  padding: 11px 108px 10px 111px;
   margin-right: 20px;
+  margin-left: 20px;
   display: block;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  padding-top: 11px;
 }
 
 .catalog__item {
   padding-bottom: 25px;
-  border-top: 1px solid @section-background-color;
-  border-bottom: 1px solid @section-background-color;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
   display: flex;
   flex-direction: column;
+  width: 320px;
+}
+
+.catalog__item:first-child {
+  border-top: none;
 }
 
 .catalog__item--link {
@@ -54,12 +74,17 @@
   width: 320px;
   display: flex;
   flex-direction: column;
+  margin-left: -40px;
 }
 
 .catalog__goods {
   min-height: 210px;
-  border: 1px solid @section-background-color;
+  border: 1px solid #ededed;
   width: 320px;
+}
+
+.catalog__item--more-goods {
+  position: relative;
 }
 
 .catalog__goods-title {
@@ -67,24 +92,25 @@
   .text-style__button;
   text-transform: uppercase;
   margin-left: 60px;
+  margin-top: 80px;
 }
 
 .catalog__goods-text {
   .basic-font-paragraph;
   .text-style__paragraph--small;
   margin-left: 50px;
-  margin-top: 11px;
+  margin-top: -5px;
 }
 
 .catalog__goods-button {
   .order-button;
   .basic-font-brand;
   background-color: @section-background-color;
-  padding: 13px 80px 12px 80px;
+  padding: 13px 80px 12px 95px;
   margin-left: 20px;
   margin-right: 20px;
   display: block;
-  margin-top: 25px;
+  margin-top: 12px;
   color: @font-paragraph-color;
 }
 
@@ -97,8 +123,9 @@
   display: block;
   width: 31px;
   height: 31px;
-  margin-top: 27px;
-  margin-left: 80px;
+  position: absolute;
+  top: 27px;
+  left: 145px;
 }
 
 .catalog__item:last-child {
