@@ -36,13 +36,18 @@ input::placeholder {
 .client-info__label--age::after {
   content: "";
   display: block;
-  border-bottom: 2px solid @section-background-color;
+  border-bottom: 1px solid #ededed;
   margin-top: 25px;
+  margin-left: -20px;
 }
 
 .client-info__wrap {
   display: flex;
   flex-direction: column;
+}
+
+.client-info__container {
+  margin-left: 20px;
 }
 
 .client-info__basic {
@@ -57,8 +62,9 @@ input::placeholder {
 .client-info__label--do-not-know::after {
   content: "";
   display: block;
-  border-bottom: 2px solid @section-background-color;
+  border-bottom: 1px solid #ededed;
   margin-top: 25px;
+  margin-left: -20px;
 }
 
 @media (min-width: @tablet-width) {

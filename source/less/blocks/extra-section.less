@@ -7,11 +7,26 @@
 .extra-section__title {
   .basic-font-brand;
   .text-style__form-page--h2;
+  margin-left: 20px;
+  position: relative;
+}
+
+.extra-section__title::after {
+  content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 3px;
+    width: 136px;
+    background-color: @brand-color;
+    top: 15px;
+    left: 164px;
 }
 
 .extra-section__wrap {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .extra-section__label {

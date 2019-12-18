@@ -1,6 +1,21 @@
 .client-contacts__title {
   .basic-font-brand;
   .text-style__form-page--h2;
+  margin-left: 20px;
+  width: 190px;
+  position: relative;
+}
+
+.client-contacts__title::after {
+  content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 3px;
+    width: 99px;
+    background-color: @brand-color;
+    top: 15px;
+    left: 201px;
 }
 
 .client-contacts__label {
@@ -47,12 +62,13 @@
   vertical-align: middle;
   position: absolute;
   top: 25px;
-  left: 250px;
+  left: 240px;
 }
 
 .client-contacts__wrap {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 @media (min-width: @tablet-width) {

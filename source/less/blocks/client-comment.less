@@ -1,6 +1,20 @@
 .client-comment__title {
   .basic-font-brand;
   .text-style__form-page--h2;
+  margin-left: 20px;
+  position: relative;
+}
+
+.client-comment__title::after {
+  content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 3px;
+    width: 158px;
+    background-color: @brand-color;
+    top: 15px;
+    left: 142px;
 }
 
 .client-comment__area {
@@ -8,6 +22,9 @@
   .text-style__button;
   color: @font-paragraph-color;
   text-transform: uppercase;
+  width: 280px;
+  margin-left: 20px;
+  min-height: 150px;
 }
 
 @media (min-width: @tablet-width) {
