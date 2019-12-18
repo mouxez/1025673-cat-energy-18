@@ -53,6 +53,7 @@
 }
 
 .main-nav__item--active a {
+  padding-bottom: 5px;
   color: @heading-color;
   border-bottom: 2px solid @brand-color;
 }
@@ -84,6 +85,22 @@
     border: none;
     font-size: 18px;
     padding: 0 0;
+  }
+
+  .main-nav__item:first-child {
+    margin-left: 30px;
+  }
+
+  .main-nav__item:nth-child(2) {
+    margin-left: -20px;
+  }
+
+  .main-nav__item:nth-child(3) {
+    margin-left: 20px;
+  }
+
+  .main-nav__wrapper {
+    margin-top: 35px;
   }
 
   .main-nav--closed {
