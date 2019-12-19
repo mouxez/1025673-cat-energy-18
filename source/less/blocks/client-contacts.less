@@ -72,26 +72,58 @@
 }
 
 @media (min-width: @tablet-width) {
+  .client-contacts__title {
+    font-size: 36px;
+    width: 528px;
+    margin-left: 71px;
+  }
+
+  .client-contacts__title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background-color: @brand-color;
+    top: 25px;
+    left: -70px;
+  }
+
+  .client-contacts__title::after {
+      width: 145px;
+      top: 25px;
+      left: 552px;
+  }
+
   .client-contacts__wrap {
-    width: 767px;
+    margin-left: 70px;
   }
 
   .client-contacts__input--email {
     min-width: 551px;
     min-height: 52px;
+    margin-left: 25px;
   }
 
   .client-contacts__input--phone {
     min-width: 535px;
     min-height: 52px;
+    margin-left: 20px;
   }
 
   .client-contacts__icon--email {
-    left: 560px;
+    left: 600px;
+    top: 20px;
   }
 
   .client-contacts__icon--phone {
-    left: 560px;
+    left: 600px;
+    top: 30px;
+  }
+
+  .client-contacts__span {
+    font-size: 20px;
   }
 }
 

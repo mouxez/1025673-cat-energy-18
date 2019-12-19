@@ -31,6 +31,31 @@
   .client-comment__area {
     min-width: 631px;
     min-height: 174px;
+    margin-left: 70px;
+    font-size: 20px;
+  }
+
+  .client-comment__title {
+    font-size: 36px;
+    margin-left: 70px;
+  }
+
+  .client-comment__title::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background-color: @brand-color;
+    top: 25px;
+    left: -70px;
+  }
+
+  .client-comment__title::after {
+    width: 475px;
+    top: 25px;
+    left: 223px;
   }
 }
 
