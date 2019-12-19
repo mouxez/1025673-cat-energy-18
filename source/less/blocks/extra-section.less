@@ -80,3 +80,31 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .extra-section__title::before {
+    width: 65px;
+    left: -70px;
+  }
+
+  .extra-section__title::after {
+    width: 1115px;
+    left: 255px;
+  }
+
+  .extra-section__wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+  }
+
+  .extra-section__label {
+    width: 200px;
+    margin-top: 0;
+  }
+
+  .extra-section__label:nth-child(3),
+  .extra-section__label:nth-child(4) {
+    margin-top: 0;
+  }
+}
