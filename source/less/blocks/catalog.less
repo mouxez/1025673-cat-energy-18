@@ -243,30 +243,23 @@
   }
 
   .catalog__list {
-    width: 1440px;
+    width: 1300px;
     justify-content: flex-start;
+    margin-left: 110px;
+    padding-left: 0;
   }
 
   .catalog__item {
     border: none;
     width: 245px;
     min-height: 423px;
+    margin-right: 80px;
   }
 
-  .catalog__item:first-child,
-  .catalog__item:nth-child(5) {
-    margin-left: 100px;
+  .catalog__item:nth-child(odd),
+  .catalog__item:nth-child(even) {
+    margin-left: 0;
   }
-
-  .catalog__item:nth-child(2),
-  .catalog__item:nth-child(3),
-  .catalog__item:nth-child(4),
-  .catalog__item:nth-child(6),
-  .catalog__item:nth-child(7),
-  .catalog__item:nth-child(8) {
-    margin-left: 80px;
-  }
-
 
   .catalog__table {
     margin-top: 10px;
