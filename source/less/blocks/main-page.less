@@ -42,22 +42,20 @@
   top: 19px;
 }
 
-.main-page__title-container::after {
-  content: "";
-  background-image: url("../img/index-can-mobile@1x.png");
+.main-page__can-container {
   width: 280px;
   min-height: 270px;
   object-fit: contain;
   display: block;
-  position: absolute;
-  top: 170px;
-  left: 22px;
+  position: relative;
+  top: -120px;
+  left: 12px;
 }
 
 .main-page__button {
   width: 280px;
   min-height: 40px;
-  margin-top: 140px;
+  margin-top: -200px;
   margin-left: 20px;
   display: inline-block;
   vertical-align: middle;
@@ -68,6 +66,7 @@
 
 .main-page__button--wrap {
   .site-size;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
@@ -76,7 +75,19 @@
     background-color: @simple-background-color;
     width: 767px;
     z-index: -10;
-    position: relative;
+  }
+
+  .main-page__wrap {
+    width: 767px;
+  }
+
+  .main-page__can-container {
+    min-height: 609px;
+    object-fit: contain;
+    display: block;
+    margin-top: -80px;
+    margin-left: 230px;
+    z-index: -1;
   }
 
   .main-page__title,
@@ -96,22 +107,20 @@
     margin-left: 90px;
   }
 
-  .main-page__title-container::after {
-    display: none;
-  }
-
   .main-page__button {
-    margin-top: -40px;
+    position: absolute;
+    top: -350px;
+    left: -150px;
     font-size: 20px;
     width: 245px;
     height: 52px;
-    margin-left: 90px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-page__wrap {
     display: flex;
+    width: 1440px;
   }
 
   .main-page__background--desktop {
@@ -131,18 +140,13 @@
     z-index: 2;
   }
 
-  .main-page__background--desktop::before {
-    content: "";
+  .main-page__can-container {
     object-fit: contain;
-    background-image: url("../img/index-can-desktop@1x.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
     position: relative;
     z-index: 1;
-    top: 210px;
-    left: -150px;
-    width: 552px;
-    height: 499px;
+    // top: 210px;
+    // left: -150px;
+    // width: 552px;
+    // height: 499px;
   }
 }

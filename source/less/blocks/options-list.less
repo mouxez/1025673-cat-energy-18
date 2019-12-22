@@ -9,16 +9,12 @@
 
 .options-list__wrap {
   left: -20px;
-  top: -15px;
+  top: -70px;
   position: relative;
 }
 
 .options-list--weight-gain {
   margin-top: 20px;
-}
-
-.options-list--weight-loss {
-  margin-top: 22px;
 }
 
 .options-list__title {
@@ -117,18 +113,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .options-list::before {
-    content: "";
-    background-image: url("../img/index-can-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 709px;
-    min-height: 609px;
-    object-fit: contain;
-    display: block;
-    margin-top: -80px;
-    margin-left: -20px;
-    z-index: -1;
+  .options-list__wrap {
+    margin: 0 auto;
+    width: 767px;
+    margin-top: -220px;
   }
 
   .options-list--weight-loss,
@@ -198,8 +186,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .options-list::before {
-    display: none;
+  .options-list__wrap {
+    width: 1440px;
+    margin-top: 340px;
   }
 
   .options-list {
@@ -250,9 +239,5 @@
   .options-list__link--slim,
   .options-list__link--pro {
     margin-top: auto;
-  }
-
-  .options-list__wrap {
-    margin-top: 340px;
   }
 }
