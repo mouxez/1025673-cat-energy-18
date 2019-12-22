@@ -1,6 +1,11 @@
 .page-footer {
   min-height: 236px;
   background-color: @section-background-color;
+  width: 100vw;
+}
+
+.page-footer__wrap {
+  // background-color: @section-background-color;
   width: 320px;
   margin: 0 auto;
   display: flex;
@@ -38,10 +43,14 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    min-height: 150px;
+  }
+
+  .page-footer__wrap {
     width: 767px;
     flex-direction: row;
     align-items: center;
-    min-height: 150px;
+    padding-top: 30px;
   }
 
   .page-footer__logo {
@@ -57,7 +66,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
+  .page-footer__wrap {
     width: 1440px;
     justify-content: space-around;
   }

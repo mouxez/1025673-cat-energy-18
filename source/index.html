@@ -33,7 +33,7 @@
       </nav>
     </header>
 
-    <main class="main-page container">
+    <main class="main-page">
       <div class="main-page__wrap">
         <div class="main-page__title-container">
           <h1 class="main-page__title">Функциональное питание для котов</h1>
@@ -42,7 +42,9 @@
         <div class="main-page__background--desktop">
         </div>
       </div>
-      <button class="main-page__button order-button" type="button">Подобрать программу</button>
+      <div class="main-page__button--wrap">
+      <a href="form.html" class="main-page__button order-button" type="button">Подобрать программу</a>
+      </div>
       <div class="options-list__wrap">
         <ul class="options-list">
           <li class="options-list--weight-loss">
@@ -57,6 +59,7 @@
           </li>
         </ul>
       </div>
+      <div class="how-it-works__wrap">
       <h2 class="how-it-works__title">Как это работает</h2>
       <ul class="how-it-works__list">
         <li class="how-it-works__item how-it-works__item--leaf">
@@ -72,7 +75,7 @@
           <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
-
+      </div>
       <section class="example-section">
         <h2 class="example-section__title">Живой пример</h2>
         <p class="example-section__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -91,36 +94,40 @@
           <span class="example-section__switch-text">Стало</span>
         </div>
       </section>
-      <div class="cooperation__wrapper cooperation__wrapper--white">
-        <p class="cooperation__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-      </div>
+      <section class="cooperation__wrapper cooperation__wrapper--white">
+        <div class="cooperation__inner-wrapper">
+          <p class="cooperation__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+        </div>
+      </section>
         <iframe class="map-source" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="380" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </main>
-    <footer class="page-footer container">
-      <img class="page-footer__logo" src="img/logo-footer.svg" width="124" height="24" alt="Кэт энерджи логотип">
-      <ul class="page-footer__social">
-        <li class="page-footer__social-item  page-footer__social-item--vk">
-          <a href="#">
-            <img src="img/icon-vk.svg" width="22" height="12" alt="вконтакте">
+    <footer class="page-footer">
+      <div class="page-footer__wrap">
+        <img class="page-footer__logo" src="img/logo-footer.svg" width="124" height="24" alt="Кэт энерджи логотип">
+        <ul class="page-footer__social">
+          <li class="page-footer__social-item  page-footer__social-item--vk">
+            <a href="#">
+              <img src="img/icon-vk.svg" width="22" height="12" alt="вконтакте">
+            </a>
+          </li>
+          <li class="page-footer__social-item page-footer__social-item--insta">
+            <a href="#">
+              <img src="img/icon-insta.svg" width="17" height="17" alt="инстаграм">
+            </a>
+          </li>
+          <li class="page-footer__social-item page-footer__social-item--fb">
+            <a href="#">
+              <img src="img/icon-fb.svg" width="10" height="19" alt="фейсбук">
+            </a>
+          </li>
+        </ul>
+        <div class="footer-copyrights">
+          <a class="footer-copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_balnk">
+            <img class="footer-copyrights__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy логотип">
           </a>
-        </li>
-        <li class="page-footer__social-item page-footer__social-item--insta">
-          <a href="#">
-            <img src="img/icon-insta.svg" width="17" height="17" alt="инстаграм">
-          </a>
-        </li>
-        <li class="page-footer__social-item page-footer__social-item--fb">
-          <a href="#">
-            <img src="img/icon-fb.svg" width="10" height="19" alt="фейсбук">
-          </a>
-        </li>
-      </ul>
-      <div class="footer-copyrights">
-        <a class="footer-copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_balnk">
-          <img class="footer-copyrights__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy логотип">
-        </a>
+        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>

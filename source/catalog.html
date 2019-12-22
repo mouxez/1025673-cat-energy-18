@@ -33,7 +33,7 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="catalog__main">
 
       <h2 class="catalog__title">Каталог продукции</h2>
       <ul class="catalog__list">
@@ -199,38 +199,42 @@
         <p class="gift-section__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
       </div>
-      <div class="cooperation__wrapper">
-        <p class="cooperation__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-      </div>
+      <section class="cooperation__wrapper">
+        <div class="cooperation__inner-wrapper">
+          <p class="cooperation__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+        </div>
+      </section>
         <iframe class="map-source" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="380" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </main>
 
     <footer class="page-footer">
-      <img class="page-footer__logo" src="img/logo-footer.svg" width="124" height="24" alt="Кэт энерджи логотип">
-      <ul class="page-footer__social">
-        <li class="page-footer__social-item page-footer__social-item--vk">
-          <a href="#">
-            <img src="img/icon-vk.svg" width="22" height="12" alt="вконтакте">
-          </a>
-        </li>
-        <li class="page-footer__social-item page-footer__social-item--insta">
-          <a href="#">
-            <img src="img/icon-insta.svg" width="17" height="17" alt="инстаграм">
-          </a>
-        </li>
-        <li class="page-footer__social-item page-footer__social-item--fb">
-          <a href="#">
-            <img src="img/icon-fb.svg" width="10" height="19" alt="фейсбук">
-          </a>
-        </li>
-      </ul>
+      <div class="page-footer__wrap">
+        <img class="page-footer__logo" src="img/logo-footer.svg" width="124" height="24" alt="Кэт энерджи логотип">
+        <ul class="page-footer__social">
+          <li class="page-footer__social-item page-footer__social-item--vk">
+            <a href="#">
+              <img src="img/icon-vk.svg" width="22" height="12" alt="вконтакте">
+            </a>
+          </li>
+          <li class="page-footer__social-item page-footer__social-item--insta">
+            <a href="#">
+              <img src="img/icon-insta.svg" width="17" height="17" alt="инстаграм">
+            </a>
+          </li>
+          <li class="page-footer__social-item page-footer__social-item--fb">
+            <a href="#">
+              <img src="img/icon-fb.svg" width="10" height="19" alt="фейсбук">
+            </a>
+          </li>
+        </ul>
         <div class="footer-copyrights">
           <a class="footer-copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive" target="_balnk">
             <img class="footer-copyrights__logo" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy логотип">
           </a>
         </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
