@@ -33,26 +33,28 @@ input::placeholder {
   margin-left: 16px;
 }
 
+.client-info__label,
+.client-info__label--radio {
+  margin-left: 20px;
+}
+
 .client-info__label--age::after {
   content: "";
   display: block;
   border-bottom: 1px solid @line-color;
   margin-top: 25px;
-  margin-left: -20px;
 }
 
 .client-info__wrap {
   display: flex;
   flex-direction: column;
-}
-
-.client-info__container {
-  margin-left: 20px;
+  .site-size;
 }
 
 .client-info__basic {
   display: flex;
   flex-direction: column;
+  .site-size;
 }
 
 .client-info__radio {
@@ -64,7 +66,6 @@ input::placeholder {
   display: block;
   border-bottom: 1px solid @line-color;
   margin-top: 25px;
-  margin-left: -20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -75,6 +76,7 @@ input::placeholder {
 
   .client-info__basic {
     margin-left: 50px;
+    width: 710px;
   }
 
   input::placeholder {

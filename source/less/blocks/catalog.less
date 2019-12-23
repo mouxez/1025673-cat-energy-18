@@ -156,7 +156,7 @@
   }
 
   .catalog__item:nth-child(odd) {
-    margin-left: 20px;
+    margin-left: -10px;
   }
 
   .catalog__item:nth-child(even) {
@@ -240,15 +240,19 @@
   }
 
   .catalog__list {
-    width: 768px;
+    width: 767px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: -25px;
+    margin-left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .catalog__wrap {
+    width: 1440px;
+  }
+
   .catalog__title {
     margin-left: 95px;
   }
