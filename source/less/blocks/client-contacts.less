@@ -12,10 +12,10 @@
   vertical-align: middle;
   position: absolute;
   height: 3px;
-  width: 99px;
+  width: calc(50vw - 40%);
   background-color: @brand-color;
   top: 15px;
-  left: 201px;
+  left: 216px;
 }
 
 .client-contacts__label {
@@ -74,26 +74,39 @@
 @media (min-width: @tablet-width) {
   .client-contacts__title {
     font-size: 36px;
-    width: 528px;
-    margin-left: 71px;
+    width: 548px;
+    margin-left: 51px;
+    text-align: center;
+    background-color: #ffffff;
+    z-index: 1;
   }
 
-  .client-contacts__title::before {
+  .client-contacts__wrap::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
     position: absolute;
     height: 3px;
-    width: 30px;
+    width: 100%;
     background-color: @brand-color;
-    top: 25px;
-    left: -70px;
+    top: 656px;
+    left: calc(50% - 50vw);
+  }
+
+  .client-contacts__wrap::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: @brand-color;
+    top: 878px;
+    left: calc(50% - 50vw);
   }
 
   .client-contacts__title::after {
-    width: 145px;
-    top: 25px;
-    left: 552px;
+    display: none;
   }
 
   .client-contacts__wrap {
@@ -133,20 +146,33 @@
     align-items: flex-end;
   }
 
+  .client-contacts__wrap::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: @brand-color;
+    top: 470px;
+    left: calc(50% - 50vw);
+  }
+
+  .client-contacts__wrap::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: @brand-color;
+    top: 637px;
+    left: calc(50% - 50vw);
+  }
+
   .client-contacts__title {
-    margin-left: 80px;
-  }
-
-  .client-contacts__title::before {
-    width: 65px;
-    top: 25px;
-    left: -80px;
-  }
-
-  .client-contacts__title::after {
-    width: 830px;
-    top: 25px;
-    left: 530px;
+    margin-left: 40px;
+    width: 560px;
   }
 
   .client-contacts__label:nth-child(2) {

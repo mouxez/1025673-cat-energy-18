@@ -11,10 +11,10 @@
   vertical-align: middle;
   position: absolute;
   height: 3px;
-  width: 158px;
+  width: calc(50vw - 5%);
   background-color: @brand-color;
   top: 15px;
-  left: 142px;
+  left: 155px;
 }
 
 .client-comment__area {
@@ -37,25 +37,15 @@
 
   .client-comment__title {
     font-size: 36px;
-    margin-left: 70px;
-  }
-
-  .client-comment__title::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    height: 3px;
-    width: 30px;
-    background-color: @brand-color;
-    top: 25px;
-    left: -70px;
+    margin-left: 40px;
+    width: 240px;
+    text-align: center;
+    background-color: #ffffff;
+    z-index: 1;
   }
 
   .client-comment__title::after {
-    width: 475px;
-    top: 25px;
-    left: 223px;
+    display: none;
   }
 }
 
@@ -66,17 +56,12 @@
   }
 
   .client-comment__title::before {
-    width: 65px;
-    top: 25px;
-    left: -80px;
+    display: none;
+    width: calc(50vw - 49%);
+    right: 1386px;
   }
 
   .client-comment__title {
-    margin-left: 80px;
-  }
-
-  .client-comment__title::after {
-    width: 1130px;
-    left: 230px;
+    width: 250px;
   }
 }
