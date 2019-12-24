@@ -6,13 +6,8 @@
 }
 
 .client-comment__title::after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  height: 3px;
+  .adaptive-line;
   width: calc(50vw - 5%);
-  background-color: @brand-color;
   top: 15px;
   left: 155px;
 }
@@ -53,12 +48,6 @@
   .client-comment__area {
     min-width: 1220px;
     padding-left: 20px;
-  }
-
-  .client-comment__title::before {
-    display: none;
-    width: calc(50vw - 49%);
-    right: 1386px;
   }
 
   .client-comment__title {

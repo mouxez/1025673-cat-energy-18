@@ -16,13 +16,8 @@
 }
 
 .additional-catalog__title::after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  height: 3px;
+  .adaptive-line;
   width: calc(50vw - 40%);
-  background-color: @brand-color;
   top: 15px;
   left: 288px;
 }
@@ -92,25 +87,15 @@
   }
 
   .additional-catalog__title::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    height: 3px;
+    .adaptive-line;
     width: calc(50vw - 45%);
-    background-color: @brand-color;
     top: 25px;
     right: 730px;
   }
 
   .additional-catalog__title::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    height: 3px;
+    .adaptive-line;
     width: calc(50vw - 7%);
-    background-color: @brand-color;
     top: 25px;
     left: 437px;
   }
@@ -142,13 +127,7 @@
   }
 
   .additional-catalog__wrap::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    height: 3px;
     width: 100%;
-    background-color: @brand-color;
     top: 1215px;
     left: calc(50% - 50vw);
   }

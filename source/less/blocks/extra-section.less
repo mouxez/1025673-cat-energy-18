@@ -12,13 +12,8 @@
 }
 
 .extra-section__title::after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  height: 3px;
+  .adaptive-line;
   width: calc(50vw - 10%);
-  background-color: @brand-color;
   top: 15px;
   left: 170px;
 }
@@ -46,13 +41,8 @@
   }
 
   .extra-section__wrap::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    height: 3px;
+    .adaptive-line;
     width: 100%;
-    background-color: @brand-color;
     top: 1170px;
     left: calc(50% - 50vw);
   }
@@ -82,13 +72,8 @@
 
 @media (min-width: @desktop-width) {
   .extra-section__wrap::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    position: absolute;
-    height: 3px;
+    .adaptive-line;
     width: 100%;
-    background-color: @brand-color;
     top: 933px;
     left: calc(50% - 50vw);
   }
