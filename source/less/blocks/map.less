@@ -1,4 +1,16 @@
-.map {
-  margin: 0 auto;
-  width: 320px;
+.map-source {
+  width: 100vw;
+  margin-bottom: -4px;
+}
+
+@media (min-width: @tablet-width) {
+  .map-source {
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map-source {
+    margin-top: 70px;
+  }
 }

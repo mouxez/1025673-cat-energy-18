@@ -2,6 +2,25 @@
   .basic-font-brand;
   .text-style__form-element;
   color: #222222;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.client-info__input {
+  // border: 1px solid #cdcdcd;
+  border-color: #cdcdcd;
+}
+
+.client-info__input:hover {
+  // border: 1px solid #8b8b8b;
+  border-color: #8b8b8b;
+}
+
+.client-info__input:focus {
+  outline: none;
+  border-color: #444444;
+  // border: none;
+  // box-shadow: 0 0 0 1px #444444;
 }
 
 input::placeholder {
@@ -9,4 +28,112 @@ input::placeholder {
   font-size: 16px;
   color: @font-paragraph-color;
   text-transform: uppercase;
+}
+
+.client-info__input--name {
+  min-width: 229px;
+  min-height: 45px;
+  margin-left: 15px;
+}
+
+.client-info__input--weight {
+  min-width: 204px;
+  min-height: 45px;
+  margin-left: 18px;
+  margin-top: 15px;
+}
+
+.client-info__input--age {
+  min-width: 172px;
+  min-height: 45px;
+  margin-top: 15px;
+  margin-left: 16px;
+}
+
+.client-info__label,
+.client-info__label--radio {
+  margin-left: 20px;
+}
+
+.client-info__label--age::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid @line-color;
+  margin-top: 25px;
+}
+
+.client-info__wrap {
+  display: flex;
+  flex-direction: column;
+  .site-size;
+}
+
+.client-info__basic {
+  display: flex;
+  flex-direction: column;
+  .site-size;
+}
+
+.client-info__radio {
+  margin-top: 30px;
+}
+
+.client-info__label--do-not-know::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid @line-color;
+  margin-top: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .client-info__label--age::after,
+  .client-info__label--do-not-know::after {
+    display: none;
+  }
+
+  .client-info__basic {
+    margin-left: 50px;
+    width: 710px;
+  }
+
+  input::placeholder {
+    font-size: 20px;
+  }
+
+  .client-info__input--name {
+    min-width: 567px;
+    min-height: 52px;
+  }
+
+  .client-info__input--weight {
+    min-width: 536px;
+    min-height: 52px;
+    margin-left: 20px;
+  }
+
+  .client-info__input--age {
+    min-width: 497px;
+    min-height: 52px;
+    margin-left: 15px;
+  }
+
+  .client-info__wrap {
+    width: 630px;
+    height: 196px;
+    border: 1px solid @border-color;
+    margin-top: 45px;
+    margin-left: 50px;
+  }
+
+  .client-info__span {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .client-info__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
 }

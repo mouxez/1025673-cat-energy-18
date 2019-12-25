@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-color: @brand-color;
   margin-left: 20px;
+  position: relative;
 }
 
 .gift-section__text {
@@ -13,7 +14,7 @@
   .text-style__paragraph--big;
   color: @simple-background-color;
   width: 159px;
-  margin-top: 68px;
+  margin-top: 150px;
   margin-left: 75px;
   display: inline-block;
   vertical-align: middle;
@@ -28,4 +29,47 @@
   display: block;
   width: 56px;
   height: 61px;
+  position: absolute;
+  top: 70px;
+  left: 110px;
+}
+
+@media (min-width: @tablet-width) {
+  .gift-section {
+    width: 708px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-color: @simple-background-color;
+    margin-left: 30px;
+  }
+
+  .gift-section__text::before {
+    top: 115px;
+    left: 80px;
+  }
+
+  .gift-section__text {
+    margin-left: 450px;
+    margin-top: 125px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift-section {
+    width: 245px;
+    height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    margin-top: 95px;
+    margin-left: 570px;
+  }
+
+  .gift-section__text {
+    margin-left: 50px;
+    margin-top: 170px;
+  }
+
+  .gift-section__text::before {
+    top: 70px;
+    left: 90px;
+  }
 }

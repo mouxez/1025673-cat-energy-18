@@ -10,6 +10,14 @@
   margin-top: 11px;
 }
 
+.page-header__logo-image:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-image:active {
+  opacity: 0.6;
+}
+
 .page-header__wrapper {
   display: flex;
 }
@@ -18,6 +26,11 @@
   .page-header {
     display: flex;
     width: 767px;
+  }
+
+  .page-header__logo-image {
+    margin-top: 24px;
+    margin-left: 29px;
   }
 }
 
@@ -30,6 +43,8 @@
 
   .page-header__logo-image {
     width: 203px;
-    height: 60px;
+    min-height: 100px;
+    margin-top: -20px;
+    margin-left: 40px;
   }
 }

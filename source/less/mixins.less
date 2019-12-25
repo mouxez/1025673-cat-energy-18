@@ -60,10 +60,12 @@
   font-size: 14px;
   color: @simple-background-color;
   text-transform: uppercase;
+  border: none;
 }
 
 .site-size {
   margin: 0 auto;
+  width: 320px;
 }
 
 .how-it-works__item--style {
@@ -74,5 +76,14 @@
   display: block;
   width: 60px;
   height: 60px;
+  background-color: @brand-color;
+}
+
+.adaptive-line {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  height: 3px;
   background-color: @brand-color;
 }

@@ -8,6 +8,22 @@
   align-self: center;
   margin-top: 10px;
   margin-left: 65px;
+  cursor: pointer;
+}
+
+.main-nav__toggle--nojs {
+  display: none;
+}
+
+.main-nav__toggle--closed {
+  background-image: url("../img/icon-close.svg");
+  width: 19px;
+  height: 19px;
+}
+
+.main-nav {
+  position: relative;
+  background-color: @simple-background-color;
 }
 
 .main-nav__list {
@@ -28,9 +44,24 @@
   font-weight: normal;
 }
 
+.main-nav__list a[href]:hover {
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.main-nav__list a[href]:active {
+  color: rgba(17, 17, 17, 0.3);
+}
+
+.main-nav__item--active a {
+  padding-bottom: 5px;
+  color: @heading-color;
+  border-bottom: 2px solid @brand-color;
+}
+
 .main-nav__item {
   padding: 24px 24px 24px 23px;
-  border: 1px solid @section-background-color;
+  border-top: 1px solid @section-background-color;
+  border-bottom: 1px solid @section-background-color;
   width: 320px;
 }
 
@@ -46,28 +77,56 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    align-content: flex-start;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 60px;
   }
 
   .main-nav__item {
-    width: 170px;
+    width: auto;
     border: none;
     font-size: 18px;
-    padding: 0 0;
+    padding: 0;
+  }
+
+  .main-nav__wrapper {
+    margin-top: 35px;
+  }
+
+  .main-nav--closed {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__list a {
+  .main-nav__list {
+    position: absolute;
+    z-index: 1000;
+    left: -600px;
+  }
+
+  .main-nav__list .main-nav__service--active a {
+    border-bottom: 2px solid @simple-background-color;
+  }
+
+  .main-nav__item a {
+    color: @simple-background-color;
+  }
+
+  .main-nav--closed {
+    display: block;
+  }
+
+
+  .main-nav__item--help a {
     color: @heading-color;
   }
 
-  .main-nav__list {
-    position: relative;
-    z-index: 1000;
+  .main-nav__list .main-nav__item a[href]:hover {
+    color: rgba(255, 255, 255, 0.6);
   }
 
-  .main-nav__service a {
-    color: @simple-background-color;
+  .main-nav__list .main-nav__item a[href]:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
