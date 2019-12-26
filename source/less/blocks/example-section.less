@@ -22,6 +22,7 @@
   .basic-font-paragraph;
   .text-style__paragraph--big;
   max-width: 266px;
+  line-height: 1.29;
 }
 
 .example-section__list dt {
@@ -38,6 +39,35 @@
   flex-direction: column-reverse;
   flex-wrap: wrap;
   align-content: center;
+  position: relative;
+}
+
+.example-section__value--loss {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  padding: 13px 44px 14px 43px;
+}
+
+.example-section__feature--loss {
+  position: absolute;
+  left: 35px;
+  top: 45px;
+  z-index: 1;
+}
+
+.example-section__value--time {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  padding: 13px 23px 15px 23px;
+}
+
+.example-section__feature--time {
+  position: absolute;
+  top: 45px;
+  left: 205px;
+  z-index: 1;
 }
 
 .example-section__value {
@@ -50,7 +80,6 @@
   border-radius: 7%;
   display: inline-block;
   vertical-align: middle;
-  padding: 12px;
 }
 
 .example-section__cost {
@@ -61,6 +90,13 @@
   color: @heading-color;
   text-transform: uppercase;
   margin-left: 45px;
+  margin-top: 70px;
+}
+
+.example-section__feature {
+  width: 55px;
+  text-align: center;
+  background-color: @section-background-color;
 }
 
 .example-section__switch-text {
