@@ -1,5 +1,9 @@
 .example-section {
   background-color: @section-background-color;
+  width: 100%;
+}
+
+.example-section__wrap {
   padding-left: 20px;
   width: 320px;
   display: flex;
@@ -40,6 +44,14 @@
   flex-wrap: wrap;
   align-content: center;
   position: relative;
+}
+
+.example-section__switch-text--after {
+  margin-left: 65px;
+}
+
+.example-section__switch-text--before {
+  margin-left: 65px;
 }
 
 .example-section__value--loss {
@@ -120,13 +132,112 @@
 }
 
 @media (min-width: @tablet-width) {
+  .example-section__wrap {
+    width: 100%;
+    padding-left: 0;
+  }
+
   .example-section {
+    border-top: 1px solid @border-color;
     margin-top: 100px;
+    background-color: @simple-background-color;
+  }
+
+  .example-section__head-wrap {
+    background-color: @simple-background-color;
+    width: 100%;
+  }
+
+  .example-section__inner-wrap {
+    width: 767px;
+    margin: 0 auto;
+  }
+
+  .example-section__external-wrap {
+    margin-top: 250px;
+    width: 100%;
+    background-color: @section-background-color;
+    min-height: 462px;
+  }
+
+  .example-section__title {
+    font-size: 60px;
+    margin-left: 40px;
+  }
+
+  .example-section__text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 40px;
+    max-width: 676px;
+  }
+
+  .example-section__cost {
+    font-size: 20px;
+    width: 180px;
+    text-align: right;
+    margin-left: 560px;
+    margin-top: -12px;
+  }
+
+  .example-section__value--loss {
+    padding: 20px 62px 20px 62px;
+    left: 0;
+  }
+
+  .example-section__value--time {
+    padding: 20px 33px 20px 33px;
+    left: 250px;
+  }
+
+  .example-section__value {
+    font-size: 30px;
+  }
+
+  .example-section__feature {
+    background-color: @simple-background-color;
+    width: 110px;
+  }
+
+  .example-section__feature--loss {
+    top: 65px;
+    left: 65px;
+  }
+
+  .example-section__feature--time {
+    left: 315px;
+    top: 65px;
+  }
+
+  .example-section__switch-wrapper {
+    background-color: @section-background-color;
+    width: 767px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 462px;
+  }
+
+  .example-section__switch-wrapper::before {
+    background-image: url("../img/before-desktop@1x.png");
+    width: 700px;
+    height: 499px;
+    position: absolute;
+    top: -170px;
+    left: 60px;
+  }
+
+  .example-section__switch-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    border-bottom: 1px dotted @border-color;
+    margin-top: 400px;
+    margin-left: 200px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .example-section {
-    margin-top: 100px;
+  .example-section__wrap {
+    width: 1440px;
   }
 }
