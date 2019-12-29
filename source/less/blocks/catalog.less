@@ -265,17 +265,17 @@
 
 @media (min-width: @desktop-width) {
   .catalog__wrap {
-    width: 1440px;
+    width: 1300px;
   }
 
   .catalog__title {
-    margin-left: 94px;
+    margin-left: 60px;
   }
 
   .catalog__list {
-    width: 1300px;
+    width: 1230px;
     justify-content: flex-start;
-    margin-left: 110px;
+    margin-left: 60px;
     padding-left: 0;
   }
 
@@ -289,6 +289,10 @@
   .catalog__item:nth-child(odd),
   .catalog__item:nth-child(even) {
     margin-left: 0;
+  }
+
+  .catalog__item:nth-child(4n+4) {
+    margin-right: 0;
   }
 
   .catalog__table {
