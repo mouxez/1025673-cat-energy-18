@@ -22,12 +22,35 @@
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  position: relative;
 }
 
 .extra-section__label {
   display: inline-block;
   vertical-align: middle;
   margin-top: 20px;
+  padding-left: 40px;
+}
+
+.extra-section__checkbox-image {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @border-color;
+  margin-left: -40px;
+  margin-top: -5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.extra-section__checkbox:checked + .extra-section__checkbox-image {
+  background-image: url(".../img/icon-tick.svg");
+  display: block;
+}
+
+.extra-section__checkbox {
+  appearance: none;
 }
 
 @media (min-width: @tablet-width) {
