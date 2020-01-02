@@ -57,6 +57,17 @@
   margin-left: 20px;
 }
 
+.options-list__link--slim:active::after,
+.options-list__link--pro:active::after {
+  opacity: 0.3;
+}
+
+.options-list__link--slim:hover::after,
+.options-list__link--pro:hover::after {
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  width: 34px;
+}
+
 .options-list__link--slim::after,
 .options-list__link--pro::after {
   content: "";
@@ -158,7 +169,6 @@
 
   .options-list__link--slim::after,
   .options-list__link--pro::after {
-    background-image: url("../img/icon-right-arrow-long.svg");
     width: 24px;
     height: 11px;
     margin-top: -4px;

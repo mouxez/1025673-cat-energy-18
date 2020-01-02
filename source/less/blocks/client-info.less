@@ -51,6 +51,14 @@ input::placeholder {
   margin-left: 20px;
 }
 
+.client-info__label--radio {
+  margin-top: 30px;
+}
+
+.client-info__label--radio:active {
+  opacity: 0.3;
+}
+
 .client-info__label--age::after {
   content: "";
   display: block;
@@ -71,7 +79,44 @@ input::placeholder {
 }
 
 .client-info__radio {
-  margin-top: 30px;
+  display: none;
+}
+
+.client-info__radio-image {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid @border-color;
+}
+
+.client-info__radio-image::before {
+  content: "";
+  position: absolute;
+  display: block;
+  transition: 0.2s;
+  width: 18px;
+  height: 18px;
+  background-color: @brand-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.client-info__radio:checked + .client-info__radio-image::before {
+  opacity: 1;
+}
+
+.client-info__radio:disabled + .client-info__radio-image::before {
+  opacity: 0.3;
+}
+
+.client-info__radio-image:hover {
+  border-color: #bababa;
 }
 
 .client-info__label--do-not-know::after {
@@ -123,6 +168,10 @@ input::placeholder {
 
   .client-info__span {
     font-size: 20px;
+  }
+
+  .client-info__label--radio {
+    margin-top: 17px;
   }
 }
 
