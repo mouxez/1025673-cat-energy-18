@@ -79,7 +79,16 @@ input::placeholder {
 }
 
 .client-info__radio {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .client-info__radio-image {
@@ -113,6 +122,10 @@ input::placeholder {
 
 .client-info__radio:disabled + .client-info__radio-image::before {
   opacity: 0.3;
+}
+
+.client-info__radio:focus + .client-info__radio-image {
+  box-shadow: 0 0 2px 2px #4d90f0;
 }
 
 .client-info__radio-image:hover {
