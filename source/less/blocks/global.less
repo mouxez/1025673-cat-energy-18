@@ -6,7 +6,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  background-color: rgba(255, 0, 0, 0.1);
 }
 
 body {
@@ -59,4 +58,10 @@ a {
 
 .order-button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }

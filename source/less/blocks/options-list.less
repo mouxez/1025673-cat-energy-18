@@ -55,6 +55,7 @@
   vertical-align: middle;
   text-transform: uppercase;
   margin-left: 20px;
+  position: relative;
 }
 
 .options-list__link--slim:active::after,
@@ -171,8 +172,9 @@
   .options-list__link--pro::after {
     width: 24px;
     height: 11px;
-    margin-top: -4px;
-    margin-left: 25px;
+    position: absolute;
+    top: 7px;
+    left: auto;
   }
 
   .options-list__link--slim,

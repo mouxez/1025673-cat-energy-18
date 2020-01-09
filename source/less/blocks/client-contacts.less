@@ -36,6 +36,10 @@
   border-color: @font-paragraph-color;
 }
 
+.client-contacts__input:active + .client-contacts__icon {
+  fill: @brand-color;
+}
+
 .client-contacts__input--email {
   min-width: 219px;
   min-height: 45px;
@@ -100,6 +104,10 @@
   .client-contacts__wrap {
     position: relative;
     margin-left: 0;
+  }
+
+  .client-contacts__label {
+    margin-left: 50px;
   }
 
   .client-contacts__input--email {

@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding-bottom: 38px;
 }
 
 .example-section__title {
@@ -119,6 +120,20 @@
   color: @heading-color;
   text-transform: uppercase;
   border-bottom: 1px dotted @border-color;
+  cursor: pointer;
+}
+
+.example-section__switch-text:hover {
+  border-bottom: 2px solid @border-color;
+}
+
+.example-section__switch-text:active {
+  border-bottom: none;
+}
+
+.example-section__external-wrap {
+  margin-top: 250px;
+  position: relative;
 }
 
 .example-section__switch-wrapper::before {
@@ -130,6 +145,8 @@
   display: block;
   width: 311px;
   height: 232px;
+  position: absolute;
+  top: -250px;
 }
 
 @media (min-width: @tablet-width) {
@@ -239,5 +256,9 @@
 @media (min-width: @desktop-width) {
   .example-section__wrap {
     width: 1300px;
+  }
+
+  .example-section {
+    border-top: none;
   }
 }

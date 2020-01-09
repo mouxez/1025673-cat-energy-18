@@ -57,11 +57,11 @@
           </label>
           <label class="client-info__label">
             <span class="client-info__span">Вес (кг):*<span>
-            <input class="client-info__input client-info__input--weight" type="number" placeholder="7" name="weight" required>
+            <input class="client-info__input client-info__input--weight" type="number" placeholder="7" name="weight" min="1" max="50" required>
           </label>
           <label class="client-info__label client-info__label--age">
             <span class="client-info__span">Возраст (лет):<span>
-            <input class="client-info__input client-info__input--age" type="number" placeholder="7" name="age">
+            <input class="client-info__input client-info__input--age" type="number" placeholder="7" name="age" min="1" max="50">
           </label>
         </div>
           <div class="client-info__wrap">
@@ -109,12 +109,12 @@
             <span class="extra-section__span">Сахарозаменитель<span>
           </label>
           <label class="extra-section__label">
-            <input class="extra-section__checkbox" type="checkbox" name="extras" value="water" checked disabled>
+            <input class="extra-section__checkbox" type="checkbox" name="extras" value="water">
             <span class="extra-section__checkbox-image"></span>
             <span class="extra-section__span">Питьевая вода<span>
           </label>
           <label class="extra-section__label">
-            <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk" disabled>
+            <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk">
             <span class="extra-section__checkbox-image"></span>
             <span class="extra-section__span">Молоко<span>
           </label>
