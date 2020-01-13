@@ -119,16 +119,24 @@
   line-height: 1.25;
   color: @heading-color;
   text-transform: uppercase;
+  border: none;
   border-bottom: 1px dotted @border-color;
   cursor: pointer;
+  background-color: @section-background-color;
 }
 
 .example-section__switch-text:hover {
-  border-bottom: 2px solid @border-color;
+  border-bottom: 1px solid @border-color;
 }
 
 .example-section__switch-text:active {
   border-bottom: none;
+}
+
+.example-section__switch-text:focus {
+  box-shadow: 0 0 2px 2px #4d90f0;
+  border: none;
+  outline: none;
 }
 
 .example-section__external-wrap {
@@ -236,7 +244,7 @@
   }
 
   .example-section__switch-wrapper::before {
-    background-image: url("../img/before-desktop@1x.png");
+    background-image: url("../img/before-tablet@1x.png");
     width: 700px;
     height: 499px;
     position: absolute;
@@ -256,9 +264,60 @@
 @media (min-width: @desktop-width) {
   .example-section__wrap {
     width: 1300px;
+    flex-direction: row;
+    margin-top: 100px;
   }
 
   .example-section {
     border-top: none;
+  }
+
+  .example-section__text {
+    width: 450px;
+  }
+
+  .example-section__cost {
+    margin-top: 150px;
+    margin-left: 40px;
+    width: 410px;
+    text-align: left;
+  }
+
+  .example-section__price {
+    margin-left: 140px;
+  }
+
+  .example-section__switch-wrapper::before {
+    background-image: url("../img/before-desktop@1x.png");
+    top: -210px;
+    left: -100px;
+  }
+
+  .example-section__switch-wrapper {
+    width: 600px;
+    min-height: 100px;
+    margin-right: 200px;
+    background-color: @simple-background-color;
+  }
+
+  .example-section__external-wrap {
+    margin-top: 250px;
+    background-color: @simple-background-color;
+    margin-left: -150px;
+    width: 600px;
+  }
+
+  .example-section__list {
+    margin-top: 60px;
+  }
+
+  .example-section__switch-text {
+    margin-top: 330px;
+    margin-left: 0;
+    background-color: @simple-background-color;
+  }
+
+  .example-section__switch-text--after {
+    margin-left: 400px;
   }
 }
