@@ -27,6 +27,14 @@
   border: 1px solid @border-color;
 }
 
+.client-contacts__input:invalid {
+  border-color: @error-color;
+}
+
+.client-contacts__input:invalid + .client-contacts__icon {
+  fill: @error-color;
+}
+
 .client-contacts__input:hover {
   border-color: @input-hover-color;
 }
@@ -36,7 +44,7 @@
   border-color: @font-paragraph-color;
 }
 
-.client-contacts__input:active + .client-contacts__icon {
+.client-contacts__input:focus + .client-contacts__icon {
   fill: @brand-color;
 }
 
