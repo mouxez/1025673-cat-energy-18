@@ -269,12 +269,19 @@
     margin-top: 100px;
   }
 
+  .example-section__head-wrap {
+    background-color: @section-background-color;
+  }
+
   .example-section {
     border-top: none;
+    background-color: @section-background-color;
+    position: relative;
   }
 
   .example-section__text {
     width: 450px;
+    margin-top: 200px;
   }
 
   .example-section__cost {
@@ -298,14 +305,18 @@
     width: 600px;
     min-height: 100px;
     margin-right: 200px;
-    background-color: @simple-background-color;
+    background-color: @section-background-color;
   }
 
   .example-section__external-wrap {
     margin-top: 250px;
-    background-color: @simple-background-color;
+    background-color: @section-background-color;
     margin-left: -150px;
     width: 600px;
+  }
+
+  .example-section__feature {
+    background-color: @section-background-color;
   }
 
   .example-section__list {
@@ -315,10 +326,23 @@
   .example-section__switch-text {
     margin-top: 330px;
     margin-left: 0;
-    background-color: @simple-background-color;
+    background-color: @section-background-color;
   }
 
   .example-section__switch-text--after {
     margin-left: 400px;
+  }
+
+  .example-section__title {
+    background-color: @simple-background-color;
+    min-height: 150px;
+    position: absolute;
+    top: -36px;
+    left: -40px;
+    width: calc(70vw + 30%);
+  }
+
+  .example-section__title span {
+    margin-left: 50px;
   }
 }
