@@ -17,7 +17,7 @@
   color: @heading-color;
   font-size: 36px;
   line-height: 1.67;
-  margin-top: 36px;
+  margin-top: 17px;
   font-weight: normal;
   display: inline-block;
   vertical-align: middle;
@@ -28,6 +28,7 @@
   .text-style__paragraph--big;
   max-width: 266px;
   line-height: 1.29;
+  margin-top: -6px;
 }
 
 .example-section__list dt {
@@ -47,39 +48,33 @@
   position: relative;
 }
 
-.example-section__switch-text--after {
-  margin-left: 65px;
-}
-
-.example-section__switch-text--before {
-  margin-left: 65px;
-}
-
 .example-section__value--loss {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: -40px;
   padding: 13px 44px 14px 43px;
+  text-transform: uppercase;
 }
 
 .example-section__feature--loss {
   position: absolute;
   left: 35px;
-  top: 45px;
+  top: 53px;
   z-index: 1;
 }
 
 .example-section__value--time {
   position: absolute;
-  top: 0;
-  left: 130px;
-  padding: 13px 23px 15px 23px;
+  top: 5px;
+  left: 117px;
+  padding: 13px 23px 15px 21px;
+  text-transform: uppercase;
 }
 
 .example-section__feature--time {
   position: absolute;
-  top: 45px;
-  left: 205px;
+  top: 55px;
+  left: 190px;
   z-index: 1;
 }
 
@@ -103,7 +98,7 @@
   color: @heading-color;
   text-transform: uppercase;
   margin-left: 45px;
-  margin-top: 70px;
+  margin-top: 96px;
 }
 
 .example-section__feature {
@@ -126,6 +121,15 @@
   padding: 0;
 }
 
+.example-section__switch-text--before {
+  margin-left: 45px;
+  margin-top: 3px;
+}
+
+.example-section__switch-text--after {
+  margin-left: 115px;
+}
+
 .example-section__switch-text:hover {
   border-bottom: 1px solid @border-color;
 }
@@ -145,6 +149,10 @@
   position: relative;
 }
 
+.example-section__switch-wrapper {
+  margin-top: 37px;
+}
+
 .example-section__switch-wrapper::before {
   content: "";
   background-image: url("../img/before-mobile@1x.png");
@@ -155,7 +163,8 @@
   width: 311px;
   height: 232px;
   position: absolute;
-  top: -250px;
+  top: -225px;
+  left: -15px;
 }
 
 @media (min-width: @tablet-width) {
@@ -166,9 +175,16 @@
 
   .example-section {
     border-top: 1px solid @border-color;
-    margin-top: 100px;
+    margin-top: 219px;
     background-color: @simple-background-color;
   }
+
+  .example-section__title {
+    font-size: 60px;
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+
 
   .example-section__head-wrap {
     background-color: @simple-background-color;
@@ -181,21 +197,16 @@
   }
 
   .example-section__external-wrap {
-    margin-top: 250px;
+    margin-top: 245px;
     width: 100%;
     background-color: @section-background-color;
     min-height: 462px;
   }
 
-  .example-section__title {
-    font-size: 60px;
-    margin-left: 40px;
-  }
-
   .example-section__text {
     font-size: 16px;
     line-height: 1.5;
-    margin-left: 40px;
+    margin-left: 30px;
     max-width: 676px;
   }
 
@@ -203,18 +214,20 @@
     font-size: 20px;
     width: 180px;
     text-align: right;
-    margin-left: 560px;
-    margin-top: -12px;
+    margin-left: 555px;
+    margin-top: 42px;
   }
 
   .example-section__value--loss {
-    padding: 20px 62px 20px 62px;
-    left: 0;
+    padding: 20px 56px 20px 55px;
+    left: -12px;
+    top: 35px;
   }
 
   .example-section__value--time {
-    padding: 20px 33px 20px 33px;
-    left: 250px;
+    padding: 20px 30px 20px 28px;
+    left: 192px;
+    top: 35px;
   }
 
   .example-section__value {
@@ -223,17 +236,21 @@
 
   .example-section__feature {
     background-color: @simple-background-color;
-    width: 110px;
+    width: 150px;
+  }
+
+  .example-section__list dt {
+    font-size: 14px;
   }
 
   .example-section__feature--loss {
-    top: 65px;
-    left: 65px;
+    top: 97px;
+    left: 35px;
   }
 
   .example-section__feature--time {
-    left: 315px;
-    top: 65px;
+    left: 237px;
+    top: 98px;
   }
 
   .example-section__switch-wrapper {
@@ -249,16 +266,23 @@
     width: 700px;
     height: 499px;
     position: absolute;
-    top: -170px;
-    left: 60px;
+    top: -160px;
+    left: 40px;
   }
 
   .example-section__switch-text {
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
-    margin-top: 400px;
-    margin-left: 200px;
+    margin-top: 365px;
+  }
+
+  .example-section__switch-text--before {
+    margin-left: 97px;
+  }
+
+  .example-section__switch-text--after {
+    margin-left: 468px;
   }
 }
 
@@ -266,7 +290,8 @@
   .example-section__wrap {
     width: 1300px;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: -83px;
+    height: 462px;
   }
 
   .example-section__head-wrap {
@@ -280,25 +305,26 @@
   }
 
   .example-section__text {
-    width: 450px;
-    margin-top: 200px;
+    width: 438px;
+    margin-top: 70px;
+    margin-left: 0;
   }
 
   .example-section__cost {
-    margin-top: 150px;
-    margin-left: 40px;
+    margin-top: 137px;
+    margin-left: 0;
     width: 410px;
     text-align: left;
   }
 
   .example-section__price {
-    margin-left: 140px;
+    margin-left: 57px;
   }
 
   .example-section__switch-wrapper::before {
     background-image: url("../img/before-desktop@1x.png");
-    top: -210px;
-    left: -100px;
+    top: -430px;
+    left: -95px;
   }
 
   .example-section__switch-wrapper {
@@ -310,7 +336,7 @@
 
   .example-section__external-wrap {
     margin-top: 250px;
-    background-color: @section-background-color;
+    background-color: transparent;
     margin-left: -150px;
     width: 600px;
   }
@@ -324,25 +350,52 @@
   }
 
   .example-section__switch-text {
-    margin-top: 330px;
-    margin-left: 0;
+    margin-top: 115px;
+    margin-left: -10px;
     background-color: @section-background-color;
   }
 
   .example-section__switch-text--after {
-    margin-left: 400px;
+    margin-left: 467px;
   }
 
   .example-section__title {
     background-color: @simple-background-color;
     min-height: 150px;
     position: absolute;
-    top: -36px;
+    top: -180px;
     left: -40px;
     width: calc(70vw + 30%);
   }
 
   .example-section__title span {
-    margin-left: 50px;
+    margin-left: 120px;
+    margin-top: 50px;
+  }
+
+  .example-section__value--loss {
+    left: -42px;
+    top: 7px;
+  }
+
+  .example-section__value--time {
+    left: 162px;
+    top: 7px;
+  }
+
+  .example-section__feature--loss {
+    top: 72px;
+    left: 25px;
+    width: 110px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .example-section__feature--time {
+    left: 215px;
+    top: 72px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 140px;
   }
 }

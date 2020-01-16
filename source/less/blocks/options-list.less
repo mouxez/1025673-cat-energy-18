@@ -9,7 +9,7 @@
 
 .options-list__wrap {
   left: -20px;
-  top: -70px;
+  top: -102px;
   position: relative;
 }
 
@@ -132,7 +132,7 @@
   .options-list__wrap {
     margin: 0 auto;
     width: 767px;
-    margin-top: -60px;
+    margin-top: -53px;
   }
 
   .options-list--weight-loss,
@@ -142,16 +142,21 @@
     position: relative;
   }
 
+  .options-list--weight-gain {
+    margin-top: 30px;
+  }
+
   .options-list__title {
     font-size: 36px;
-    margin-left: 55px;
-    margin-top: 81px;
+    margin-left: 50px;
+    margin-top: 75px;
   }
 
   .options-list__paragraph {
     font-size: 16px;
     border: none;
-    margin-left: 55px;
+    margin-left: 53px;
+    margin-top: -13px;
     width: 373px;
     line-height: 1.5;
   }
@@ -164,8 +169,8 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    left: 428px;
-    top: 120px;
+    left: 424px;
+    top: 90px;
   }
 
   .options-list__link--slim::after,
@@ -174,13 +179,13 @@
     height: 11px;
     position: absolute;
     top: 7px;
-    left: auto;
+    left: 115px;
   }
 
   .options-list__link--slim,
   .options-list__link--pro {
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 53px;
   }
 
@@ -188,23 +193,23 @@
     width: 141px;
     height: 194px;
     position: absolute;
-    left: 480px;
-    top: 110px;
+    left: 475px;
+    top: 80px;
   }
 
   .options-list__paragraph_2::before {
     width: 268px;
     height: 113px;
     position: absolute;
-    left: 415px;
-    top: 160px;
+    left: 410px;
+    top: 135px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .options-list__wrap {
     width: 1300px;
-    margin-top: 180px;
+    margin-top: 73px;
   }
 
   .options-list {
@@ -214,27 +219,27 @@
   }
 
   .options-list__title {
-    margin-top: 81px;
+    margin-top: 75px;
     margin-left: 216px;
   }
 
   .options-list__paragraph_1,
   .options-list__paragraph_2 {
-    margin-top: 30px;
+    margin-top: 33px;
     margin-left: 52px;
-    width: 450px;
+    width: 470px;
   }
 
   .options-list__paragraph_1::before {
     top: 41px;
-    left: 90px;
+    left: 65px;
     width: 71px;
     height: 97px;
   }
 
   .options-list__paragraph_2::before {
     top: 69px;
-    left: 57px;
+    left: 35px;
     width: 134px;
     height: 57px;
   }
@@ -244,20 +249,31 @@
     width: 570px;
   }
 
+  .options-list--weight-loss {
+    margin-left: 20px;
+  }
+
+  .options-list--weight-gain {
+    margin-left: 60px;
+    margin-top: 0;
+  }
+
   .options-list__title::before {
     width: 100px;
     height: 100px;
     position: absolute;
     top: 47px;
-    left: 52px;
+    left: 30px;
   }
 
   .options-list__link--slim,
   .options-list__link--pro {
-    margin-top: auto;
+    margin-top: -9px;
   }
 
-  .options-list--weight-gain {
-    margin-top: 0;
+  .options-list__link--slim::after,
+  .options-list__link--pro::after {
+    top: 4px;
+    left: 117px;
   }
 }
