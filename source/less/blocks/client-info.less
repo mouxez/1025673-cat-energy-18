@@ -9,6 +9,7 @@
 .client-info__input {
   border: 1px solid @border-color;
   appearance: textfield;
+  padding-left: 13px;
 }
 
 .client-info__input:hover {
@@ -30,13 +31,13 @@ input::placeholder {
 .client-info__input--name {
   min-width: 229px;
   min-height: 45px;
-  margin-left: 15px;
+  margin-left: 11px;
 }
 
 .client-info__input--weight {
   min-width: 204px;
   min-height: 45px;
-  margin-left: 18px;
+  margin-left: 14px;
   margin-top: 15px;
 }
 
@@ -44,7 +45,7 @@ input::placeholder {
   min-width: 172px;
   min-height: 45px;
   margin-top: 15px;
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .client-info__label,
@@ -52,31 +53,37 @@ input::placeholder {
   margin-left: 20px;
 }
 
-.client-info__label--radio {
-  margin-top: 30px;
+.client-info__label--radio:first-child {
+  margin-top: 19px;
+}
+
+.client-info__label--radio:not(:first-child) {
+  margin-top: 13px;
 }
 
 .client-info__label--radio:active {
   opacity: 0.3;
 }
 
-.client-info__label--age::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid @line-color;
-  margin-top: 25px;
-}
-
 .client-info__wrap {
   display: flex;
   flex-direction: column;
   .site-size;
+  border-top: 1px solid @line-color;
+  border-bottom: 1px solid @line-color;
+  margin-top: 23px;
+  padding-bottom: 23px;
 }
 
 .client-info__basic {
   display: flex;
   flex-direction: column;
   .site-size;
+  margin-top: 37px;
+}
+
+.client-info__label--radio .client-info__span {
+  margin-left: 11px;
 }
 
 .client-info__radio {
@@ -97,8 +104,8 @@ input::placeholder {
   vertical-align: middle;
   position: relative;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid @border-color;
 }
 
@@ -107,8 +114,8 @@ input::placeholder {
   position: absolute;
   display: block;
   transition: 0.2s;
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   background-color: @brand-color;
   top: 50%;
   left: 50%;
@@ -133,13 +140,6 @@ input::placeholder {
   border-color: #bababa;
 }
 
-.client-info__label--do-not-know::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid @line-color;
-  margin-top: 25px;
-}
-
 @media (min-width: @tablet-width) {
   .client-info__label--age::after,
   .client-info__label--do-not-know::after {
@@ -149,6 +149,7 @@ input::placeholder {
   .client-info__basic {
     margin-left: 50px;
     width: 710px;
+    margin-top: 65px;
   }
 
   input::placeholder {
@@ -158,34 +159,55 @@ input::placeholder {
   .client-info__input--name {
     min-width: 567px;
     min-height: 52px;
+    padding-left: 20px;
   }
 
   .client-info__input--weight {
     min-width: 536px;
     min-height: 52px;
-    margin-left: 20px;
+    margin-left: 17px;
+    padding-left: 17px;
   }
 
   .client-info__input--age {
     min-width: 497px;
     min-height: 52px;
-    margin-left: 15px;
+    margin-left: 14px;
+    padding-left: 17px;
   }
 
   .client-info__wrap {
     width: 630px;
     height: 196px;
     border: 1px solid @border-color;
-    margin-top: 45px;
-    margin-left: 50px;
+    margin-top: 72px;
+    margin-left: 71px;
+  }
+
+  .client-info__radio-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .client-info__radio-image::before {
+    width: 18px;
+    height: 18px;
   }
 
   .client-info__span {
     font-size: 20px;
   }
 
+  .client-info__label:not(:first-child) {
+    margin-top: 6px;
+  }
+
   .client-info__label--radio {
-    margin-top: 17px;
+    margin-left: 25px;
+  }
+
+  .client-info__label--radio .client-info__span {
+    margin-left: 17px;
   }
 }
 

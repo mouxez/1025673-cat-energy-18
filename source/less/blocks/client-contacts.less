@@ -1,16 +1,18 @@
 .client-contacts__title {
   .basic-font-brand;
   .text-style__form-page--h2;
-  margin-left: 20px;
+  margin-left: 19px;
+  margin-top: 25px;
   width: 190px;
   position: relative;
+  line-height: 1;
 }
 
 .client-contacts__title::after {
   .adaptive-line;
-  width: calc(50vw - 40%);
+  width: calc(50vw - 33%);
   top: 15px;
-  left: 216px;
+  left: 204px;
 }
 
 .client-contacts__label {
@@ -25,6 +27,8 @@
 
 .client-contacts__input {
   border: 1px solid @border-color;
+  margin-left: 5px;
+  padding-left: 16px;
 }
 
 .client-contacts__input:invalid {
@@ -61,14 +65,14 @@
 
 .client-contacts__icon--email {
   position: absolute;
-  top: 15px;
-  left: 240px;
+  top: 18px;
+  left: 246px;
 }
 
 .client-contacts__icon--phone {
   position: absolute;
-  top: 25px;
-  left: 240px;
+  top: 29px;
+  left: 246px;
 }
 
 .client-contacts__icon {
@@ -79,29 +83,31 @@
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  margin-top: 33px;
 }
 
 @media (min-width: @tablet-width) {
   .client-contacts__title {
     font-size: 36px;
-    width: 548px;
-    margin-left: 51px;
+    width: 588px;
+    margin-left: 31px;
     text-align: center;
     background-color: @simple-background-color;
     z-index: 1;
+    margin-top: 75px;
   }
 
   .client-contacts__wrap::before {
     .adaptive-line;
     width: 100vw;
-    top: -50px;
+    top: -90px;
     left: calc(50% - 50vw);
   }
 
   .client-contacts__wrap::after {
     .adaptive-line;
     width: 100vw;
-    top: 170px;
+    top: 211px;
     left: calc(50% - 50vw);
   }
 
@@ -112,31 +118,36 @@
   .client-contacts__wrap {
     position: relative;
     margin-left: 0;
+    margin-top: 76px;
   }
 
   .client-contacts__label {
-    margin-left: 50px;
+    margin-left: 70px;
+  }
+
+  .client-contacts__label:nth-child(2) {
+    margin-top: 5px;
   }
 
   .client-contacts__input--email {
     min-width: 551px;
     min-height: 52px;
-    margin-left: 25px;
+    margin-left: 15px;
   }
 
   .client-contacts__input--phone {
     min-width: 535px;
     min-height: 52px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .client-contacts__icon--email {
-    left: 600px;
+    left: 595px;
     top: 20px;
   }
 
   .client-contacts__icon--phone {
-    left: 600px;
+    left: 595px;
     top: 30px;
   }
 

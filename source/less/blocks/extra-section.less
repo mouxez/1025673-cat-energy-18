@@ -2,20 +2,22 @@
   .basic-font-brand;
   .text-style__form-element;
   color: #222222;
+  margin-left: 12px;
 }
 
 .extra-section__title {
   .basic-font-brand;
   .text-style__form-page--h2;
   margin-left: 20px;
+  margin-top: 23px;
   position: relative;
 }
 
 .extra-section__title::after {
   .adaptive-line;
-  width: calc(50vw - 10%);
+  width: calc(50vw - 9%);
   top: 15px;
-  left: 170px;
+  left: 167px;
 }
 
 .extra-section__wrap {
@@ -28,7 +30,7 @@
 .extra-section__label {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 20px;
+  margin-top: 17px;
   padding-left: 40px;
 }
 
@@ -109,22 +111,34 @@
   .extra-section__wrap::before {
     .adaptive-line;
     width: 100vw;
-    top: -17px;
+    top: -15px;
     left: calc(50% - 50vw);
   }
 
   .extra-section__label {
-    width: 300px;
-    margin-top: 54px;
+    width: 250px;
+    margin-top: 62px;
+    margin-left: 12px;
+  }
+
+  .extra-section__label:nth-child(2),
+  .extra-section__label:nth-child(4) {
+    margin-left: 92px;
+  }
+
+  .extra-section__label:nth-child(3),
+  .extra-section__label:nth-child(4) {
+    margin-top: 35px;
   }
 
   .extra-section__title {
     font-size: 36px;
-    margin-left: 40px;
-    width: 270px;
+    margin-left: 25px;
+    width: 295px;
     text-align: center;
     background-color: @simple-background-color;
     z-index: 1;
+    margin-top: 55px;
   }
 
   .extra-section__title::after {
@@ -133,6 +147,16 @@
 
   .extra-section__span {
     font-size: 20px;
+  }
+
+  .extra-section__checkbox-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .extra-section__checkbox-image::before {
+    top: 5px;
+    left: 12px;
   }
 }
 
