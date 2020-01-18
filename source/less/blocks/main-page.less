@@ -1,12 +1,16 @@
 .main-page__title-container {
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-color: @brand-color;
+  background-color: #65a93c;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 305px;
   width: 320px;
-  margin-top: -24px;
+  margin-top: -23px;
   position: relative;
+}
+
+@media (min-resolution: @retina-dppx) {
+  background-image: url("../img/index-background-mobile@2x.jpg");
 }
 
 .main-page {
@@ -28,6 +32,7 @@
   margin-left: 38px;
   position: relative;
   top: 25px;
+  left: -2px;
 }
 
 .main-page__motivation {
@@ -40,22 +45,23 @@
   text-transform: uppercase;
   position: relative;
   top: 19px;
+  left: -14px;
 }
 
 .main-page__can-container {
-  width: 280px;
+  width: 300px;
   min-height: 270px;
   object-fit: contain;
   display: block;
   position: relative;
-  top: -120px;
-  left: 12px;
+  top: -140px;
+  left: 0;
 }
 
 .main-page__button {
   width: 280px;
   min-height: 40px;
-  margin-top: -200px;
+  margin-top: -245px;
   margin-left: 20px;
   display: inline-block;
   vertical-align: middle;
@@ -82,11 +88,12 @@
   }
 
   .main-page__can-container {
-    min-height: 609px;
+    width: 709px;
+    height: 609px;
     object-fit: contain;
     display: block;
-    margin-top: -80px;
-    margin-left: 230px;
+    margin-top: 60px;
+    margin-left: 27px;
     z-index: -1;
   }
 
@@ -99,18 +106,21 @@
     font-size: 60px;
     width: 490px;
     text-align: left;
-    margin-left: 90px;
+    margin-left: 120px;
+    margin-top: 30px;
+    line-height: 1;
   }
 
   .main-page__motivation {
     font-size: 20px;
-    margin-left: 90px;
+    top: 25px;
+    left: 42px;
   }
 
   .main-page__button {
     position: absolute;
-    top: -350px;
-    left: -150px;
+    top: -475px;
+    left: -125px;
     font-size: 20px;
     width: 245px;
     height: 52px;
@@ -120,29 +130,35 @@
 @media (min-width: @desktop-width) {
   .main-page__wrap {
     display: flex;
-    width: 1440px;
+    width: 1300px;
   }
 
   .main-page__background--desktop {
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-color: @brand-color;
+    background-color: #65a93c;
     background-size: 720px auto;
     width: 50%;
     height: 696px;
     background-position: right 0 center;
     background-repeat: no-repeat;
     position: absolute;
-    top: -115px;
+    top: -119px;
     right: 0;
     display: block;
     left: auto;
     z-index: 1;
   }
 
+  @media (min-resolution: @retina-dppx) {
+    .main-page__background--desktop {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+
   .main-page__button {
     position: relative;
-    top: -110px;
-    left: -490px;
+    top: -195px;
+    left: -390px;
     z-index: 2;
   }
 
@@ -150,7 +166,17 @@
     object-fit: contain;
     position: relative;
     z-index: 10;
-    top: 110px;
-    left: -320px;
+    top: -93px;
+    left: -280px;
+    width: 550px;
+  }
+
+  .main-page__title {
+    margin-left: 120px;
+    margin-top: 100px;
+  }
+
+  .main-page__motivation {
+    left: 45px;
   }
 }

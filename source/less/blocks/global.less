@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // background-color: rgba(255, 0, 0, 0.1);
 }
 
 body {
@@ -28,6 +29,7 @@ a {
 
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -37,6 +39,7 @@ a {
 
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -58,4 +61,10 @@ a {
 
 .order-button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }

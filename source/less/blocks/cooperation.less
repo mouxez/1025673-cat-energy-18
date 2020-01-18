@@ -6,7 +6,8 @@
   color: @heading-color;
   text-transform: uppercase;
   width: 125px;
-  margin-left: 19px;
+  margin-left: 15px;
+  margin-top: 25px;
 }
 
 .cooperation__address {
@@ -15,7 +16,8 @@
   line-height: 1.43;
   width: 135px;
   align-self: center;
-  margin-right: 25px;
+  margin-right: 19px;
+  margin-top: 10px;
 }
 
 .cooperation__wrapper {
@@ -38,6 +40,7 @@
 @media (min-width: @tablet-width) {
   .cooperation__inner-wrapper {
     width: 767px;
+    justify-content: flex-start;
   }
 
   .cooperation__wrapper {
@@ -45,31 +48,31 @@
   }
 
   .cooperation__invite {
-    margin-left: 71px;
+    margin-left: 70px;
     font-size: 20px;
     width: 154px;
     margin-top: 67px;
   }
 
   .cooperation__address {
-    margin-right: 72px;
+    margin-left: 310px;
     font-size: 16px;
     width: 160px;
     line-height: 1.25;
-    margin-top: 40px;
+    margin-top: 48px;
+    text-align: right;
   }
 
   .cooperation__address span {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 15px;
+    margin-top: 22px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .cooperation__wrapper {
     width: 570px;
-    min-height: 201px;
     position: absolute;
     background-color: @simple-background-color;
     bottom: 104px;
@@ -78,5 +81,20 @@
 
   .cooperation__inner-wrapper {
     width: 570px;
+  }
+
+  .cooperation__invite {
+    margin-top: 65px;
+    margin-left: 75px;
+  }
+
+  .cooperation__address {
+    text-align: left;
+    margin-left: 95px;
+    margin-top: 40px;
+  }
+
+  .cooperation__address span {
+    margin-top: 20px;
   }
 }
