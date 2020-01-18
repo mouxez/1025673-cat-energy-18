@@ -29,7 +29,6 @@
 .main-nav__list {
   font-family: @brand-font;
   font-size: 20px;
-  font-weight: 500;
   line-height: 1;
   text-align: center;
   letter-spacing: normal;
@@ -41,7 +40,7 @@
 
 .main-nav__list a {
   color: @heading-color;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .main-nav__list a[href]:hover {
@@ -59,10 +58,23 @@
 }
 
 .main-nav__item {
-  padding: 24px 24px 24px 23px;
+  padding: 20px 24px 21px 22px;
   border-top: 1px solid @section-background-color;
   border-bottom: 1px solid @section-background-color;
   width: 320px;
+}
+
+.main-nav__item:first-child {
+  padding: 19px 24px 21px 22px;
+  margin-top: -7px;
+}
+
+.main-nav__item:nth-child(2) {
+  padding: 22px 24px 21px 22px;
+}
+
+.main-nav__item:last-child {
+  padding: 23px 24px 21px 22px;
 }
 
 .main-nav__wrapper {
@@ -77,20 +89,42 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 500px;
-    margin-left: 60px;
+    justify-content: flex-start;
+    width: 547px;
+    margin-left: 0;
+    margin-top: -10px;
+  }
+
+  .main-nav__list a {
+    font-weight: 400;
+  }
+
+  .main-nav__item:first-child {
+    padding: 19px 0 21px 0;
+    margin-top: 2px;
+    margin-left: 42px;
+  }
+
+  .main-nav__item:nth-child(2) {
+    padding: 19px 0 21px 0;
+    margin-left: 35px;
+  }
+
+  .main-nav__item:nth-child(3) {
+    padding: 19px 0 21px 0;
+    margin-left: 35px;
   }
 
   .main-nav__item {
     width: auto;
     border: none;
     font-size: 18px;
-    padding: 0;
   }
 
   .main-nav__wrapper {
     margin-top: 35px;
+    width: 547px;
+    margin-left: 0;
   }
 
   .main-nav--closed {
@@ -102,31 +136,37 @@
   .main-nav__list {
     position: absolute;
     z-index: 1000;
-    left: -600px;
+    left: -33px;
+    margin-top: 22px;
+  }
+
+  .main-nav__list a {
+    font-size: 20px;
   }
 
   .main-nav__list .main-nav__service--active a {
     border-bottom: 2px solid @simple-background-color;
+    color: @simple-background-color;
   }
 
-  .main-nav__item a {
+  .main-nav__list .main-nav__service a {
     color: @simple-background-color;
+  }
+
+  .main-nav__list .main-nav__service a[href]:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .main-nav__list .main-nav__service a[href]:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .main-nav--closed {
     display: block;
   }
 
-
-  .main-nav__item--help a {
-    color: @heading-color;
-  }
-
-  .main-nav__list .main-nav__item a[href]:hover {
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .main-nav__list .main-nav__item a[href]:active {
-    color: rgba(255, 255, 255, 0.3);
+  .main-nav__item:first-child {
+    margin-top: 0;
+    margin-left: 22px;
   }
 }
