@@ -13,7 +13,6 @@
     </script>
     <script src="js/picturefill.min.js" async></script>
   </head>
-  </head>
   <body>
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
@@ -24,7 +23,7 @@
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 767px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" loading="eager" alt="логотип Кэт энерджи">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="логотип Кэт энерджи">
           </picture>
         </a>
         <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -54,15 +53,15 @@
         <div class="client-info__container">
         <div class="client-info__basic">
           <label class="client-info__label">
-            <span class="client-info__span">Имя:*<span>
+            <span class="client-info__span">Имя:*</span>
             <input class="client-info__input client-info__input--name" type="text" placeholder="БАРСИК" name="name" required>
           </label>
           <label class="client-info__label">
-            <span class="client-info__span">Вес (кг):*<span>
+            <span class="client-info__span">Вес (кг):*</span>
             <input class="client-info__input client-info__input--weight" type="number" placeholder="7" name="weight" min="1" max="50" required>
           </label>
           <label class="client-info__label client-info__label--age">
-            <span class="client-info__span">Возраст (лет):<span>
+            <span class="client-info__span">Возраст (лет):</span>
             <input class="client-info__input client-info__input--age" type="number" placeholder="7" name="age" min="1" max="50">
           </label>
         </div>
@@ -70,31 +69,31 @@
             <label class="client-info__label--radio">
               <input class="client-info__radio" type="radio" checked name="program" value="loss">
               <span class="client-info__radio-image"></span>
-              <span class="client-info__span">Похудение<span>
+              <span class="client-info__span">Похудение</span>
             </label>
             <label class="client-info__label--radio">
               <input class="client-info__radio" type="radio" name="program" value="gain">
               <span class="client-info__radio-image"></span>
-              <span class="client-info__span">Набор массы<span>
+              <span class="client-info__span">Набор массы</span>
             </label>
             <label class="client-info__label--radio client-info__label--do-not-know">
               <input class="client-info__radio" type="radio" name="program" value="unidentified">
               <span class="client-info__radio-image"></span>
-              <span class="client-info__span">Не знаю (Нужен ваш совет)<span>
+              <span class="client-info__span">Не знаю (Нужен ваш совет)</span>
             </label>
         </div>
         </div>
       <h2 class="client-contacts__title">Контактные данные (владельца кота)</h2>
         <div class="client-contacts__wrap">
           <label class="client-contacts__label">
-            <span class="client-contacts__span">E-mail:*<span>
+            <span class="client-contacts__span">E-mail:*</span>
             <input class="client-contacts__input client-contacts__input--email" type="email" placeholder="kuklachev@gmail.com" required>
             <svg class="client-contacts__icon client-contacts__icon--email" width="18" height="14">
               <use xlink:href="#icon-mail"></use>
             </svg>
           </label>
           <label class="client-contacts__label">
-            <span class="client-contacts__span">Телефон:*<span>
+            <span class="client-contacts__span">Телефон:*</span>
             <input class="client-contacts__input client-contacts__input--phone" type="tel" placeholder="8 (960) 900-60-90" required>
             <svg class="client-contacts__icon client-contacts__icon--phone" width="21" height="21">
               <use xlink:href="#icon-phone"></use>
@@ -108,22 +107,22 @@
           <label class="extra-section__label">
             <input class="extra-section__checkbox" type="checkbox" name="extras" value="sweetener" checked>
             <span class="extra-section__checkbox-image"></span>
-            <span class="extra-section__span">Сахарозаменитель<span>
+            <span class="extra-section__span">Сахарозаменитель</span>
           </label>
           <label class="extra-section__label">
             <input class="extra-section__checkbox" type="checkbox" name="extras" value="water">
             <span class="extra-section__checkbox-image"></span>
-            <span class="extra-section__span">Питьевая вода<span>
+            <span class="extra-section__span">Питьевая вода</span>
           </label>
           <label class="extra-section__label">
             <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk">
             <span class="extra-section__checkbox-image"></span>
-            <span class="extra-section__span">Молоко<span>
+            <span class="extra-section__span">Молоко</span>
           </label>
           <label class="extra-section__label extra-section__label--vitamin">
             <input class="extra-section__checkbox" type="checkbox" name="extras" value="vitamin">
             <span class="extra-section__checkbox-image"></span>
-            <span class="extra-section__span">Витамины<span>
+            <span class="extra-section__span">Витамины</span>
           </label>
         </div>
         <button class="form-page__button order-button">Отправить заявку</button>
@@ -131,18 +130,19 @@
       <p class="required-fields">* — Обязательные поля</p>
       </div>
       <section class="cooperation__wrapper">
+        <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
         <div class="cooperation__inner-wrapper">
           <p class="cooperation__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </div>
       </section>
-        <iframe class="map-source" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="364" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe class="map-source" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002615!2d30.320858715473765!3d59.93871916905499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1574531115034!5m2!1sen!2sru" width="320" height="364" style="border: 0;" allowfullscreen=""></iframe>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrap">
         <a href="index.html">
-        <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" loading="lazy" alt="Кэт энерджи логотип">
+        <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи логотип">
         </a>
         <ul class="page-footer__social">
           <li class="page-footer__social-item page-footer__social-item--vk">
@@ -168,7 +168,7 @@
           </li>
         </ul>
         <div class="footer-copyrights">
-          <a class="footer-copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_balnk">HTML Academy</a>
+          <a class="footer-copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <svg class="footer-copyrights__logo" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
