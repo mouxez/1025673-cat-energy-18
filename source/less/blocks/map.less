@@ -3,14 +3,47 @@
   margin-bottom: -4px;
 }
 
+.map {
+  width: 320px;
+  height: 364px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-resolution: @retina-dppx) {
+  .map {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+}
+
 @media (min-width: @tablet-width) {
   .map__source {
     height: 400px;
   }
+
+  .map {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    width: 767px;
+    height: 400px;
+  }
+
+  @media (min-resolution: @retina-dppx) {
+    .map {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .map-source {
-    // margin-top: 10px;
+  .map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    width: 1300px;
+  }
+
+  @media (min-resolution: @retina-dppx) {
+    .map {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }

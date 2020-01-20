@@ -1,0 +1,28 @@
+.toggle {
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: center;
+  width: 25px;
+  height: 19px;
+  border: none;
+  display: block;
+  align-self: center;
+  margin-top: 10px;
+  margin-left: 65px;
+  cursor: pointer;
+}
+
+.toggle--nojs {
+  display: none;
+}
+
+.toggle--closed {
+  background-image: url("../img/icon-close.svg");
+  width: 19px;
+  height: 19px;
+}
+
+@media (min-width: @tablet-width) {
+  .toggle {
+    display: none;
+  }
+}

@@ -10,7 +10,9 @@
 }
 
 @media (min-resolution: @retina-dppx) {
-  background-image: url("../img/index-background-mobile@2x.jpg");
+  .main-page__title-container {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .main-page {
@@ -107,7 +109,7 @@
     width: 1300px;
   }
 
-  .main-page__background--desktop {
+  .main-page__background {
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-color: #65a93c;
     background-size: 720px auto;
@@ -124,7 +126,7 @@
   }
 
   @media (min-resolution: @retina-dppx) {
-    .main-page__background--desktop {
+    .main-page__background {
       background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }

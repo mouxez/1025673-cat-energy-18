@@ -19,23 +19,23 @@
     </div>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
+        <a href="index.html" class="page-header__logo" title="Главная страница">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 767px)" srcset="img/logo-tablet.svg">
             <img class="page-header__image" src="img/logo-mobile.svg" width="191" height="39" alt="логотип Кэт энерджи">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="toggle toggle--closed toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="index.html">Главная</a>
+                <a href="index.html" title="Главная страница">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="catalog.html">Каталог продукции</a>
+                <a href="catalog.html" title="Каталог сайта">Каталог продукции</a>
               </li>
               <li class="main-nav__item main-nav__item--active">
                 <a>Подбор программы</a>
@@ -49,7 +49,7 @@
       <div class="form-page__title-wrap">
         <h1 class="form-page__title">Подбор программы</h1>
         <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="client-info__form" action="https://echo.htmlacademy.ru/" method="POST">
+      <form class="client-info" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="client-info__container">
         <div class="client-info__basic">
           <label class="client-info__label">
@@ -143,26 +143,26 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrap">
-        <a href="index.html">
+        <a href="index.html" title="Главная">
         <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи логотип">
         </a>
         <ul class="social">
           <li class="social__item social__item--vk">
-            <a href="#">
+            <a href="#" title="Вконтакте">
               <svg class="social__icon social__icon--vk" width="22" height="12">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--insta">
-            <a href="#">
+            <a href="#" title="Инстаграм">
               <svg class="social__icon social__icon--insta" width="17" height="17">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--fb">
-            <a href="#">
+            <a href="#" title="Фейсбук">
               <svg class="social__icon social__icon--fb" width="10" height="19">
                 <use xlink:href="#icon-fb"></use>
               </svg>
@@ -170,8 +170,8 @@
           </li>
         </ul>
         <div class="copyrights">
-          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Академия">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Курсы HTML Академии">
             <svg class="copyrights__logo" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>

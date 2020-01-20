@@ -26,7 +26,7 @@
             <img class="page-header__image" src="img/logo-mobile.svg" width="191" height="39" alt="логотип Кэт энерджи">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="toggle toggle--closed toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav main-nav--closed">
         <div class="main-nav__wrapper">
@@ -35,10 +35,10 @@
               <a>Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--service">
-              <a href="catalog.html">Каталог продукции</a>
+              <a href="catalog.html" title="Каталог сайта">Каталог продукции</a>
             </li>
             <li class="main-nav__item main-nav__item--service">
-              <a href="form.html">Подбор программы</a>
+              <a href="form.html" title="Программы">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -51,7 +51,7 @@
           <h1 class="main-page__title">Функциональное питание для котов</h1>
           <span class="main-page__motivation">Занялся собой? Займись котом!</span>
         </div>
-        <div class="main-page__background--desktop">
+        <div class="main-page__background">
         </div>
         <picture>
           <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
@@ -63,20 +63,20 @@
           <img class="main-page__can-container" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="изобрабение банки с питанием">
         </picture>
       </div>
-      <div class="offer__button-wrap">
-      <a href="form.html" class="offer__button button">Подобрать программу</a>
+      <div class="offer">
+      <a href="form.html" class="offer__button button" title="Подбор программы">Подобрать программу</a>
       </div>
       <div class="options-list">
         <ul class="options-list__choice">
           <li class="options-list__loss">
             <h3 class="options-list__title">Похудение</h3>
             <p class="options-list__paragraph options-list__paragraph--top">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="#" class="options-list__link options-list__link--slim">Каталог Slim</a>
+            <a href="#" class="options-list__link options-list__link--slim" title="Каталог Slim">Каталог Slim</a>
           </li>
           <li class="options-list__gain">
               <h3 class="options-list__title">Набор массы</h3>
               <p class="options-list__paragraph options-list__paragraph--bottom">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a href="#" class="options-list__link options-list__link--pro">Каталог pro</a>
+              <a href="#" class="options-list__link options-list__link--pro" title="Каталог Pro">Каталог Pro</a>
           </li>
         </ul>
       </div>
@@ -99,8 +99,8 @@
       </div>
       <section class="example-section">
         <div class="example-section__wrap">
-          <div class="example-section__head-wrap">
-            <div class="example-section__inner-wrap">
+          <div class="example-section__head">
+            <div class="example-section__inner">
             <h2 class="example-section__title"><span>Живой пример</span></h2>
             <p class="example-section__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <dl class="example-section__list">
@@ -112,9 +112,12 @@
             <p class="example-section__cost">Затраты на питание: <span class="example-section__price">15 000 руб.</span></p>
             </div>
           </div>
-          <div class="example-section__external-wrap">
-            <div class="example-section__switch-wrapper">
+          <div class="example-section__external">
+            <div class="example-section__switch">
               <button type="button" class="example-section__switch-text example-section__switch-text--before">Было</button>
+                <div class="relay">
+                  <div class="relay__handle"></div>
+                </div>
               <button type="button" class="example-section__switch-text example-section__switch-text--after">Стало</button>
             </div>
           </div>
@@ -138,21 +141,21 @@
         </a>
         <ul class="social">
           <li class="social__item social__item--vk">
-            <a href="#">
+            <a href="#" title="Вконтакте">
               <svg class="social__icon social__icon--vk" width="22" height="12">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--insta">
-            <a href="#">
+            <a href="#" title="Инстаграм">
               <svg class="social__icon social__icon--insta" width="17" height="17">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--fb">
-            <a href="#">
+            <a href="#" title="Фейсбук">
               <svg class="social__icon social__icon--fb" width="10" height="19">
                 <use xlink:href="#icon-fb"></use>
               </svg>
@@ -160,8 +163,8 @@
           </li>
         </ul>
         <div class="copyrights">
-          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="HTML Академия">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Курсы HTML Академии">
             <svg class="copyrights__logo" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
