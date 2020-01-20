@@ -65,26 +65,26 @@
             <input class="client-info__input client-info__input--age" type="number" placeholder="7" name="age" min="1" max="50">
           </label>
         </div>
-          <div class="client-info__wrap">
-            <label class="client-info__label--radio">
-              <input class="client-info__radio" type="radio" checked name="program" value="loss">
-              <span class="client-info__radio-image"></span>
-              <span class="client-info__span">Похудение</span>
+          <div class="parameter">
+            <label class="parameter__label">
+              <input class="parameter__radio" type="radio" checked name="program" value="loss">
+              <span class="parameter__radio-image"></span>
+              <span class="parameter__span">Похудение</span>
             </label>
-            <label class="client-info__label--radio">
-              <input class="client-info__radio" type="radio" name="program" value="gain">
-              <span class="client-info__radio-image"></span>
-              <span class="client-info__span">Набор массы</span>
+            <label class="parameter__label">
+              <input class="parameter__radio" type="radio" name="program" value="gain">
+              <span class="parameter__radio-image"></span>
+              <span class="parameter__span">Набор массы</span>
             </label>
-            <label class="client-info__label--radio client-info__label--do-not-know">
-              <input class="client-info__radio" type="radio" name="program" value="unidentified">
-              <span class="client-info__radio-image"></span>
-              <span class="client-info__span">Не знаю (Нужен ваш совет)</span>
+            <label class="parameter__label">
+              <input class="parameter__radio" type="radio" name="program" value="unidentified">
+              <span class="parameter__radio-image"></span>
+              <span class="parameter__span">Не знаю (Нужен ваш совет)</span>
             </label>
         </div>
         </div>
       <h2 class="client-contacts__title">Контактные данные (владельца кота)</h2>
-        <div class="client-contacts__wrap">
+        <div class="client-contacts">
           <label class="client-contacts__label">
             <span class="client-contacts__span">E-mail:*</span>
             <input class="client-contacts__input client-contacts__input--email" type="email" placeholder="kuklachev@gmail.com" required>
@@ -101,27 +101,27 @@
           </label>
         </div>
       <h2 class="client-comment__title">Комментарий</h2>
-        <textarea class="client-comment__area" name="comment" cols="50" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="client-comment" name="comment" cols="50" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
       <h2 class="extra-section__title">Дополнительно</h2>
-        <div class="extra-section__wrap">
+        <div class="extra-section">
           <label class="extra-section__label">
             <input class="extra-section__checkbox" type="checkbox" name="extras" value="sweetener" checked>
-            <span class="extra-section__checkbox-image"></span>
+            <span class="extra-section__image"></span>
             <span class="extra-section__span">Сахарозаменитель</span>
           </label>
           <label class="extra-section__label">
             <input class="extra-section__checkbox" type="checkbox" name="extras" value="water">
-            <span class="extra-section__checkbox-image"></span>
+            <span class="extra-section__image"></span>
             <span class="extra-section__span">Питьевая вода</span>
           </label>
           <label class="extra-section__label">
             <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk">
-            <span class="extra-section__checkbox-image"></span>
+            <span class="extra-section__image"></span>
             <span class="extra-section__span">Молоко</span>
           </label>
           <label class="extra-section__label extra-section__label--vitamin">
             <input class="extra-section__checkbox" type="checkbox" name="extras" value="vitamin">
-            <span class="extra-section__checkbox-image"></span>
+            <span class="extra-section__image"></span>
             <span class="extra-section__span">Витамины</span>
           </label>
         </div>

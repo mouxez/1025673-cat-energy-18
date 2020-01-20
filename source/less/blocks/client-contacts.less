@@ -79,7 +79,7 @@
   fill: #000000;
 }
 
-.client-contacts__wrap {
+.client-contacts {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -97,14 +97,14 @@
     margin-top: 75px;
   }
 
-  .client-contacts__wrap::before {
+  .client-contacts::before {
     .adaptive-line;
     width: 100vw;
     top: -90px;
     left: calc(50% - 50vw);
   }
 
-  .client-contacts__wrap::after {
+  .client-contacts::after {
     .adaptive-line;
     width: 100vw;
     top: 211px;
@@ -115,7 +115,7 @@
     display: none;
   }
 
-  .client-contacts__wrap {
+  .client-contacts {
     position: relative;
     margin-left: 0;
     margin-top: 76px;
@@ -157,20 +157,20 @@
 }
 
 @media (min-width: @desktop-width) {
-  .client-contacts__wrap {
+  .client-contacts {
     flex-direction: row;
     align-items: flex-end;
     margin-top: 55px;
   }
 
-  .client-contacts__wrap::before {
+  .client-contacts::before {
     .adaptive-line;
     width: 100vw;
     left: calc(50% - 50vw);
     top: -70px;
   }
 
-  .client-contacts__wrap::after {
+  .client-contacts::after {
     .adaptive-line;
     width: 100vw;
     top: 160px;

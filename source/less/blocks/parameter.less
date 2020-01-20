@@ -1,0 +1,130 @@
+.parameter {
+  display: flex;
+  flex-direction: column;
+  .site-size;
+  border-top: 1px solid @line-color;
+  border-bottom: 1px solid @line-color;
+  margin-top: 23px;
+  padding-bottom: 23px;
+}
+
+.parameter__label {
+  margin-left: 20px;
+}
+
+.parameter__span {
+  .basic-font-brand;
+  .text-style__form-element;
+  color: #222222;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.parameter__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.parameter__radio-image {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @border-color;
+}
+
+.parameter__radio-image::before {
+  content: "";
+  position: absolute;
+  display: block;
+  transition: 0.2s;
+  width: 12px;
+  height: 12px;
+  background-color: @brand-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.parameter__radio:checked + .parameter__radio-image::before {
+  opacity: 1;
+}
+
+.parameter__radio:disabled + .parameter__radio-image::before {
+  opacity: 0.3;
+}
+
+.parameter__radio:focus + .parameter__radio-image {
+  box-shadow: 0 0 2px 2px #4d90f0;
+}
+
+.parameter__radio-image:hover {
+  border-color: #bababa;
+}
+
+.parameter__label:first-child {
+  margin-top: 19px;
+}
+
+.parameter__label:not(:first-child) {
+  margin-top: 13px;
+}
+
+.parameter__label:active {
+  opacity: 0.3;
+}
+
+.parameter__label .parameter__span {
+  margin-left: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .parameter {
+    width: 630px;
+    height: 196px;
+    border: 1px solid @border-color;
+    margin-top: 72px;
+    margin-left: 71px;
+  }
+
+  .parameter__label .client-info__span {
+    margin-left: 17px;
+  }
+
+  .parameter__label {
+    margin-left: 25px;
+  }
+
+  .parameter__radio-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .parameter__radio-image::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .parameter__span {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .parameter {
+    width: 570px;
+    margin-left: -150px;
+  }
+}

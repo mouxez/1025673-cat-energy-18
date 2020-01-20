@@ -20,7 +20,7 @@
   left: 167px;
 }
 
-.extra-section__wrap {
+.extra-section {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -38,7 +38,7 @@
   opacity: 0.3;
 }
 
-.extra-section__checkbox-image {
+.extra-section__image {
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -49,11 +49,11 @@
   margin-top: -5px;
 }
 
-.extra-section__checkbox-image:hover {
+.extra-section__image:hover {
   border-color: #bababa;
 }
 
-.extra-section__checkbox-image::before {
+.extra-section__image::before {
   content: "";
   position: absolute;
   display: block;
@@ -68,19 +68,19 @@
   opacity: 0;
 }
 
-.extra-section__checkbox:checked + .extra-section__checkbox-image::before {
+.extra-section__checkbox:checked + .extra-section__image::before {
   opacity: 1;
 }
 
-.extra-section__checkbox:focus + .extra-section__checkbox-image {
+.extra-section__checkbox:focus + .extra-section__image {
   box-shadow: 0 0 2px 2px #4d90f0;
 }
 
-.extra-section__checkbox:checked:disabled + .extra-section__checkbox-image::before {
+.extra-section__checkbox:checked:disabled + .extra-section__image::before {
   opacity: 0.3;
 }
 
-.extra-section__checkbox:disabled + .extra-section__checkbox-image::before {
+.extra-section__checkbox:disabled + .extra-section__image::before {
   opacity: 0;
 }
 
@@ -98,7 +98,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .extra-section__wrap {
+  .extra-section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -108,7 +108,7 @@
     position: relative;
   }
 
-  .extra-section__wrap::before {
+  .extra-section::before {
     .adaptive-line;
     width: 100vw;
     top: -15px;
@@ -149,19 +149,19 @@
     font-size: 20px;
   }
 
-  .extra-section__checkbox-image {
+  .extra-section__image {
     width: 40px;
     height: 40px;
   }
 
-  .extra-section__checkbox-image::before {
+  .extra-section__image::before {
     top: 5px;
     left: 12px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .extra-section__wrap::before {
+  .extra-section::before {
     .adaptive-line;
     width: 100vw;
     left: calc(50% - 50vw);
@@ -172,7 +172,7 @@
     margin-top: 59px;
   }
 
-  .extra-section__wrap {
+  .extra-section {
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 1200px;
