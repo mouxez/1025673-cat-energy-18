@@ -21,7 +21,7 @@
   </div>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a href="index.html" class="page-header__logo" title="Главная страница">
+      <a href="index.html" class="page-header__logo" aria-label="Главная страница">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 767px)" srcset="img/logo-tablet.svg">
@@ -35,10 +35,10 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html" title="Главная страница">Главная</a>
+            <a href="index.html" aria-label="Главная страница">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html" title="Каталог сайта">Каталог продукции</a>
+            <a href="catalog.html" aria-label="Каталог сайта">Каталог продукции</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
             <a>Подбор программы</a>
@@ -89,50 +89,56 @@
             </label>
           </div>
         </div>
-        <h2 class="client-contacts__title">Контактные данные (владельца кота)</h2>
         <div class="client-contacts">
-          <label class="client-contacts__label">
-            <span class="client-contacts__span">E-mail:*</span>
-            <input class="client-contacts__input client-contacts__input--email" type="email"
-              placeholder="kuklachev@gmail.com" required>
-            <svg class="client-contacts__icon client-contacts__icon--email" width="18" height="14">
-              <use xlink:href="#icon-mail"></use>
-            </svg>
-          </label>
-          <label class="client-contacts__label">
-            <span class="client-contacts__span">Телефон:*</span>
-            <input class="client-contacts__input client-contacts__input--phone" type="tel"
-              placeholder="8 (960) 900-60-90" required>
-            <svg class="client-contacts__icon client-contacts__icon--phone" width="21" height="21">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
-          </label>
+          <h2 class="client-contacts__title">Контактные данные (владельца кота)</h2>
+          <div class="client-contacts__wrap">
+            <label class="client-contacts__label">
+              <span class="client-contacts__span">E-mail:*</span>
+              <input class="client-contacts__input client-contacts__input--email" type="email"
+                placeholder="kuklachev@gmail.com" required>
+              <svg class="client-contacts__icon client-contacts__icon--email" width="18" height="14">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </label>
+            <label class="client-contacts__label">
+              <span class="client-contacts__span">Телефон:*</span>
+              <input class="client-contacts__input client-contacts__input--phone" type="tel"
+                placeholder="8 (960) 900-60-90" required>
+              <svg class="client-contacts__icon client-contacts__icon--phone" width="21" height="21">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </label>
+          </div>
         </div>
-        <h2 class="client-comment__title">Комментарий</h2>
-        <textarea class="client-comment" name="comment" cols="50" rows="7"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
-        <h2 class="extra-section__title">Дополнительно</h2>
+        <div class="client-comment">
+          <h2 class="client-comment__title">Комментарий</h2>
+          <textarea class="client-comment__area" name="comment" cols="50" rows="7"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
         <div class="extra-section">
-          <label class="extra-section__label">
-            <input class="extra-section__checkbox" type="checkbox" name="extras" value="sweetener" checked>
-            <span class="extra-section__image"></span>
-            <span class="extra-section__span">Сахарозаменитель</span>
-          </label>
-          <label class="extra-section__label">
-            <input class="extra-section__checkbox" type="checkbox" name="extras" value="water">
-            <span class="extra-section__image"></span>
-            <span class="extra-section__span">Питьевая вода</span>
-          </label>
-          <label class="extra-section__label">
-            <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk">
-            <span class="extra-section__image"></span>
-            <span class="extra-section__span">Молоко</span>
-          </label>
-          <label class="extra-section__label extra-section__label--vitamin">
-            <input class="extra-section__checkbox" type="checkbox" name="extras" value="vitamin">
-            <span class="extra-section__image"></span>
-            <span class="extra-section__span">Витамины</span>
-          </label>
+          <h2 class="extra-section__title">Дополнительно</h2>
+          <div class="extra-section__wrap">
+            <label class="extra-section__label">
+              <input class="extra-section__checkbox" type="checkbox" name="extras" value="sweetener" checked>
+              <span class="extra-section__image"></span>
+              <span class="extra-section__span">Сахарозаменитель</span>
+            </label>
+            <label class="extra-section__label">
+              <input class="extra-section__checkbox" type="checkbox" name="extras" value="water">
+              <span class="extra-section__image"></span>
+              <span class="extra-section__span">Питьевая вода</span>
+            </label>
+            <label class="extra-section__label">
+              <input class="extra-section__checkbox" type="checkbox" name="extras" value="milk">
+              <span class="extra-section__image"></span>
+              <span class="extra-section__span">Молоко</span>
+            </label>
+            <label class="extra-section__label extra-section__label--vitamin">
+              <input class="extra-section__checkbox" type="checkbox" name="extras" value="vitamin">
+              <span class="extra-section__image"></span>
+              <span class="extra-section__span">Витамины</span>
+            </label>
+          </div>
         </div>
         <button class="form-page__button button">Отправить заявку</button>
       </form>
@@ -154,26 +160,26 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrap">
-      <a href="index.html" title="Главная">
+      <a href="index.html" aria-label="Главная">
         <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи логотип">
       </a>
       <ul class="social">
         <li class="social__item social__item--vk">
-          <a href="#" title="Вконтакте">
+          <a href="#" aria-label="Вконтакте">
             <svg class="social__icon social__icon--vk" width="22" height="12">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item social__item--insta">
-          <a href="#" title="Инстаграм">
+          <a href="#" aria-label="Инстаграм">
             <svg class="social__icon social__icon--insta" width="17" height="17">
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item social__item--fb">
-          <a href="#" title="Фейсбук">
+          <a href="#" aria-label="Фейсбук">
             <svg class="social__icon social__icon--fb" width="10" height="19">
               <use xlink:href="#icon-fb"></use>
             </svg>
@@ -182,8 +188,8 @@
       </ul>
       <div class="copyrights">
         <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
-          title="HTML Академия">HTML Academy</a>
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Курсы HTML Академии">
+          aria-label="HTML Академия">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Курсы HTML Академии">
           <svg class="copyrights__logo" width="27" height="34">
             <use xlink:href="#icon-htmlacademy"></use>
           </svg>
